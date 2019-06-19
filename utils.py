@@ -39,7 +39,7 @@ def recursive_tree_traversal(element, absolute_xpath, element_dictionary):
         for child_elem in element_children:
             child_elem_tag = child_elem.tag
             if child_elem_tag not in EXCLUDED_CHILDREN_TAGS:
-                child_absolute_xpath = XPATH_SEPERATOR.join([absolute_xpath, child_elem_tag]) + "[0]"
+                child_absolute_xpath = XPATH_SEPERATOR.join([absolute_xpath, child_elem_tag]) + "[1]"
                 element_dictionary = recursive_tree_traversal(child_elem, child_absolute_xpath, element_dictionary)
 
     return element_dictionary
@@ -55,18 +55,18 @@ def melt_iati(root):
         activities_list.append(activity_dict)
 
         # To key transactions and budgets
-        activity_id = activity_dict["iati-activity/iati-identifier[0]"]
+        activity_id = activity_dict["iati-activity/iati-identifier[1]"]
 
         transactions = activity.xpath("transaction")
         for transaction in transactions:
             transaction_dict = recursive_tree_traversal(transaction, "transaction", {})
-            transaction_dict["iati-activity/iati-identifier[0]"] = activity_id
+            transaction_dict["iati-activity/iati-identifier[1]"] = activity_id
             transactions_list.append(transaction_dict)
 
         budgets = activity.xpath("budget")
         for budget in budgets:
             budget_dict = recursive_tree_traversal(budget, "budget", {})
-            budget_dict["iati-activity/iati-identifier[0]"] = activity_id
+            budget_dict["iati-activity/iati-identifier[1]"] = activity_id
             budgets_list.append(budget_dict)
 
     return (activities_list, transactions_list, budgets_list)
@@ -78,8 +78,12 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
 
     activity_elems = {}
     for activity in activities_list:
-        activity_id = activity["iati-activity/iati-identifier[0]"]
+        activity_id = activity["iati-activity/iati-identifier[1]"]
         activity_elem = etree.SubElement(root, 'iati-activity')
+        activity_filtered = {k: v for k, v in activity.items() if v != ""}
+        #  TODO: Order the keys and the values (so parent gets created first, index 1 gets created first)
+        #  TODO: Once ordered, iterate through, check the Xpath to see if it exists, if not, created it
+        #  TODO: Once created or accessed, assign value or attribute value
         pdb.set_trace()
     # pageElement = etree.SubElement(root, 'Country', name='Germany', Code='DE', Storage='Basic')
 

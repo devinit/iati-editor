@@ -1,4 +1,4 @@
-budget,budget/period-end[0],budget/period-end[0]@iso-date,budget/period-start[0],budget/period-start[0]@iso-date,budget/value[0],budget/value[0]@value-date,budget@type,iati-activity/iati-identifier[0]
+budget,budget/period-end[1],budget/period-end[1]@iso-date,budget/period-start[1],budget/period-start[1]@iso-date,budget/value[1],budget/value[1]@value-date,budget@type,iati-activity/iati-identifier[1]
 ,,2016-03-31,,2016-01-01,35209.77,2016-03-31,2,GB-COH-06368740-P0007
 ,,2016-06-30,,2016-04-01,31800.00,2016-06-30,2,GB-COH-06368740-P0007
 ,,2016-09-30,,2016-07-01,25900.00,2016-09-30,2,GB-COH-06368740-P0007
