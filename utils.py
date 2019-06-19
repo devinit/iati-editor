@@ -1,5 +1,6 @@
 from lxml import etree
 import pandas as pd
+from collections import OrderedDict
 import pdb
 
 XPATH_SEPERATOR = "/"
@@ -80,8 +81,8 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
     for activity in activities_list:
         activity_id = activity["iati-activity/iati-identifier[1]"]
         activity_elem = etree.SubElement(root, 'iati-activity')
-        activity_filtered = {k: v for k, v in activity.items() if v != ""}
-        #  TODO: Order the keys and the values (so parent gets created first, index 1 gets created first)
+        activity_filtered = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "")
+        #  TODO: Order the keys and the values (so parent gets created first, index 1 gets created first) DONE
         #  TODO: Once ordered, iterate through, check the Xpath to see if it exists, if not, created it
         #  TODO: Once created or accessed, assign value or attribute value
         pdb.set_trace()
@@ -96,24 +97,24 @@ def xml_to_csv(xml_filename="test_data/DIPR IATI data June 2019.xml", a_filename
         root = tree.getroot()
 
         activities, transactions, budgets = melt_iati(root)
-        a_df = pd.DataFrame(activities)
+        a_df = pd.DataFrame(activities, dtype=str)
         a_df = a_df.reindex(sorted(a_df.columns), axis=1)
         a_df.to_csv(a_filename, index=False)
-        t_df = pd.DataFrame(transactions)
+        t_df = pd.DataFrame(transactions, dtype=str)
         t_df = t_df.reindex(sorted(t_df.columns), axis=1)
         t_df.to_csv(t_filename, index=False)
-        b_df = pd.DataFrame(budgets)
+        b_df = pd.DataFrame(budgets, dtype=str)
         b_df = b_df.reindex(sorted(b_df.columns), axis=1)
         b_df.to_csv(b_filename, index=False)
 
 
 def csv_to_xml(a_filename="test_data/activities.csv", t_filename="test_data/transactions.csv", b_filename="test_data/budgets.csv", xml_filename="test_data/output.xml"):
-    a_df = pd.read_csv(a_filename).fillna("")
-    t_df = pd.read_csv(t_filename).fillna("")
-    b_df = pd.read_csv(b_filename).fillna("")
-    activities = a_df.to_dict("records")
-    transactions = t_df.to_dict("records")
-    budgets = b_df.to_dict("records")
+    a_df = pd.read_csv(a_filename, dtype=str).fillna("")
+    t_df = pd.read_csv(t_filename, dtype=str).fillna("")
+    b_df = pd.read_csv(b_filename, dtype=str).fillna("")
+    activities = a_df.to_dict(into=OrderedDict, orient='records')
+    transactions = t_df.to_dict(into=OrderedDict, orient='records')
+    budgets = b_df.to_dict(into=OrderedDict, orient='records')
 
     doc = cast_iati(activities, transactions, budgets)
 
