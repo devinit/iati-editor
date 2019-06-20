@@ -119,7 +119,75 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
                 child_elem = activity_elem.xpath(child_xpath_without_attribute)[0]
                 child_elem.attrib[child_attribute_key] = child_elem_value
 
-    pdb.set_trace()
+    for transaction in transactions_list:
+        activity_id = transaction["iati-activity/iati-identifier[1]"]
+        activity_elem = activity_elems[activity_id]
+        transaction_elem = etree.SubElement(activity_elem, 'transaction')
+        transaction_filtered = OrderedDict((k[len('transaction')+1:], v) for k, v in transaction.items() if v != "" and k[len('transaction'):len('transaction')+1] != ATTRIB_SEPERATOR and k != "iati-activity/iati-identifier[1]")
+        for xpath_key in transaction_filtered.keys():  # Once through first to create the elements in the correct order
+            xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
+            xpath_query = transaction_elem.xpath(xpath_without_attribute)
+            parent_elem = transaction_elem
+            xpath_split = xpath_without_attribute.split(XPATH_SEPERATOR)
+            creation_index = 0
+            while not xpath_query:
+                parent_elem_xpath_query = parent_elem.xpath(xpath_split[creation_index])
+                if parent_elem_xpath_query:
+                    parent_elem = parent_elem_xpath_query[0]
+                    creation_index += 1
+                    continue
+                child_elem_tag = remove_xpath_index(xpath_split[creation_index])
+                parent_elem = etree.SubElement(parent_elem, child_elem_tag)
+                creation_index += 1
+                xpath_query = transaction_elem.xpath(xpath_without_attribute)
+        transaction_attributes = OrderedDict((k[len('transaction')+1:], v) for k, v in transaction.items() if v != "" and k[len('transaction'):len('transaction')+1] == ATTRIB_SEPERATOR)
+        for transaction_attribute_key in transaction_attributes.keys():  # Attributes applied to top level transaction
+            transaction_attribute_value = transaction_attributes[transaction_attribute_key]
+            transaction_elem.attrib[transaction_attribute_key] = transaction_attribute_value
+        for child_elem_xpath in transaction_filtered:  # Apply text and attribute values to child elements
+            child_elem_value = transaction_filtered[child_elem_xpath]
+            if ATTRIB_SEPERATOR not in child_elem_xpath:
+                child_elem = transaction_elem.xpath(child_elem_xpath)[0]
+                child_elem.text = child_elem_value
+            else:
+                child_xpath_without_attribute, child_attribute_key = child_elem_xpath.split(ATTRIB_SEPERATOR)
+                child_elem = transaction_elem.xpath(child_xpath_without_attribute)[0]
+                child_elem.attrib[child_attribute_key] = child_elem_value
+
+    for budget in budgets_list:
+        activity_id = budget["iati-activity/iati-identifier[1]"]
+        activity_elem = activity_elems[activity_id]
+        budget_elem = etree.SubElement(activity_elem, 'budget')
+        budget_filtered = OrderedDict((k[len('budget')+1:], v) for k, v in budget.items() if v != "" and k[len('budget'):len('budget')+1] != ATTRIB_SEPERATOR and k != "iati-activity/iati-identifier[1]")
+        for xpath_key in budget_filtered.keys():  # Once through first to create the elements in the correct order
+            xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
+            xpath_query = budget_elem.xpath(xpath_without_attribute)
+            parent_elem = budget_elem
+            xpath_split = xpath_without_attribute.split(XPATH_SEPERATOR)
+            creation_index = 0
+            while not xpath_query:
+                parent_elem_xpath_query = parent_elem.xpath(xpath_split[creation_index])
+                if parent_elem_xpath_query:
+                    parent_elem = parent_elem_xpath_query[0]
+                    creation_index += 1
+                    continue
+                child_elem_tag = remove_xpath_index(xpath_split[creation_index])
+                parent_elem = etree.SubElement(parent_elem, child_elem_tag)
+                creation_index += 1
+                xpath_query = budget_elem.xpath(xpath_without_attribute)
+        budget_attributes = OrderedDict((k[len('budget')+1:], v) for k, v in budget.items() if v != "" and k[len('budget'):len('budget')+1] == ATTRIB_SEPERATOR)
+        for budget_attribute_key in budget_attributes.keys():  # Attributes applied to top level budget
+            budget_attribute_value = budget_attributes[budget_attribute_key]
+            budget_elem.attrib[budget_attribute_key] = budget_attribute_value
+        for child_elem_xpath in budget_filtered:  # Apply text and attribute values to child elements
+            child_elem_value = budget_filtered[child_elem_xpath]
+            if ATTRIB_SEPERATOR not in child_elem_xpath:
+                child_elem = budget_elem.xpath(child_elem_xpath)[0]
+                child_elem.text = child_elem_value
+            else:
+                child_xpath_without_attribute, child_attribute_key = child_elem_xpath.split(ATTRIB_SEPERATOR)
+                child_elem = budget_elem.xpath(child_xpath_without_attribute)[0]
+                child_elem.attrib[child_attribute_key] = child_elem_value
 
     return doc
 
@@ -151,8 +219,8 @@ def csv_to_xml(a_filename="test_data/activities.csv", t_filename="test_data/tran
 
     doc = cast_iati(activities, transactions, budgets)
 
-    with open(xml_filename, "w") as xmlfile:
-        doc.write(xmlfile, encoding="utf-8")
+    with open(xml_filename, "wb") as xmlfile:
+        doc.write(xmlfile, encoding="utf-8", pretty_print=True)
 
 
 if __name__ == "__main__":
