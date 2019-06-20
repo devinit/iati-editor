@@ -216,8 +216,11 @@ def xml_to_csv(xml_filename="test_data/DIPR IATI data June 2019.xml", a_filename
 
 def csv_to_xml(a_filename="test_data/activities.csv", t_filename="test_data/transactions.csv", b_filename="test_data/budgets.csv", xml_filename="test_data/output.xml"):
     a_df = pd.read_csv(a_filename, dtype=str).fillna("")
+    a_df = a_df.reindex(sorted(a_df.columns), axis=1)
     t_df = pd.read_csv(t_filename, dtype=str).fillna("")
+    t_df = t_df.reindex(sorted(t_df.columns), axis=1)
     b_df = pd.read_csv(b_filename, dtype=str).fillna("")
+    b_df = b_df.reindex(sorted(b_df.columns), axis=1)
     activities = a_df.to_dict(into=OrderedDict, orient='records')
     transactions = t_df.to_dict(into=OrderedDict, orient='records')
     budgets = b_df.to_dict(into=OrderedDict, orient='records')
