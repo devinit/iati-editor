@@ -8,6 +8,12 @@ ATTRIB_SEPERATOR = "@"
 EXCLUDED_CHILDREN_TAGS = ["budget", "transaction"]
 
 
+def remove_xpath_index(relative_xpath):
+    split_path = relative_xpath.split("[")
+    indexless_path = "[".join(split_path[:-1])
+    return indexless_path
+
+
 def increment_xpath(absolute_xpath):
     split_path = absolute_xpath.split("[")
     indexless_path = "[".join(split_path[:-1])
@@ -81,12 +87,39 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
     for activity in activities_list:
         activity_id = activity["iati-activity/iati-identifier[1]"]
         activity_elem = etree.SubElement(root, 'iati-activity')
-        activity_filtered = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "")
-        #  TODO: Order the keys and the values (so parent gets created first, index 1 gets created first) DONE
-        #  TODO: Once ordered, iterate through, check the Xpath to see if it exists, if not, created it
-        #  TODO: Once created or accessed, assign value or attribute value
-        pdb.set_trace()
-    # pageElement = etree.SubElement(root, 'Country', name='Germany', Code='DE', Storage='Basic')
+        activity_elems[activity_id] = activity_elem
+        activity_filtered = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "" and k[len('iati-activity'):len('iati-activity')+1] != ATTRIB_SEPERATOR)
+        for xpath_key in activity_filtered.keys():  # Once through first to create the elements in the correct order
+            xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
+            xpath_query = activity_elem.xpath(xpath_without_attribute)
+            parent_elem = activity_elem
+            xpath_split = xpath_without_attribute.split(XPATH_SEPERATOR)
+            creation_index = 0
+            while not xpath_query:
+                parent_elem_xpath_query = parent_elem.xpath(xpath_split[creation_index])
+                if parent_elem_xpath_query:
+                    parent_elem = parent_elem_xpath_query[0]
+                    creation_index += 1
+                    continue
+                child_elem_tag = remove_xpath_index(xpath_split[creation_index])
+                parent_elem = etree.SubElement(parent_elem, child_elem_tag)
+                creation_index += 1
+                xpath_query = activity_elem.xpath(xpath_without_attribute)
+        activity_attributes = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "" and k[len('iati-activity'):len('iati-activity')+1] == ATTRIB_SEPERATOR)
+        for activity_attribute_key in activity_attributes.keys():  # Attributes applied to top level activity
+            activity_attribute_value = activity_attributes[activity_attribute_key]
+            activity_elem.attrib[activity_attribute_key] = activity_attribute_value
+        for child_elem_xpath in activity_filtered:  # Apply text and attribute values to child elements
+            child_elem_value = activity_filtered[child_elem_xpath]
+            if ATTRIB_SEPERATOR not in child_elem_xpath:
+                child_elem = activity_elem.xpath(child_elem_xpath)[0]
+                child_elem.text = child_elem_value
+            else:
+                child_xpath_without_attribute, child_attribute_key = child_elem_xpath.split(ATTRIB_SEPERATOR)
+                child_elem = activity_elem.xpath(child_xpath_without_attribute)[0]
+                child_elem.attrib[child_attribute_key] = child_elem_value
+
+    pdb.set_trace()
 
     return doc
 
