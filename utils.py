@@ -132,6 +132,52 @@ SORT_ORDER = {
     "iati-activity/fss": 123,
     "fss/forecast": 124
 }
+REQUIRED_CHILDREN = [
+    ("//iati-activities", "iati-activity"),
+    ("//iati-activity", "iati-identifier"),
+    ("//iati-activity", "reporting-org"),
+    ("//iati-activity", "title"),
+    ("//iati-activity", "description"),
+    ("//iati-activity", "participating-org"),
+    ("//iati-activity", "activity-status"),
+    ("//iati-activity", "activity-date"),
+    ("//point", "pos"),
+    ("//country-budget-items", "budget-item"),
+    ("//budget", "period-start"),
+    ("//budget", "period-end"),
+    ("//budget", "value"),
+    ("//planned-disbursement", "period-start"),
+    ("//planned-disbursement", "value"),
+    ("//transaction", "transaction-type"),
+    ("//transaction", "transaction-date"),
+    ("//transaction", "value"),
+    ("//document-link", "title"),
+    ("//document-link", "category"),
+    ("//document-link", "language"),
+    ("//reporting-org", "narrative"),
+    ("//result", "title"),
+    ("//result", "indicator"),
+    ("//indicator", "title"),
+    ("//period", "period-start"),
+    ("//period", "period-end"),
+    ("//title", "narrative"),
+    ("//description", "narrative"),
+    ("//organisation", "narrative"),
+    ("//department", "narrative"),
+    ("//person-name", "narrative"),
+    ("//job-title", "narrative"),
+    ("//mailing-address", "narrative"),
+    ("//name", "narrative"),
+    ("//activity-description", "narrative"),
+    ("//condition", "narrative"),
+    ("//comment", "narrative"),
+]
+REQUIRED_ATTRIBUTES = [
+    ("//document-link", "format"),
+    ("//category", "code"),
+    ("//language", "code"),
+    ("//sector", "code")
+]
 
 
 def iati_order(xml_element):
@@ -326,6 +372,24 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
                 child_elem = budget_elem.xpath(child_xpath_without_attribute)[0]
                 child_elem.attrib[child_attribute_key] = child_elem_value
 
+    # Add missing mandatory elements
+    for required_child in REQUIRED_CHILDREN:
+        parent_xpath, child_tag = required_child
+        matching_parents = doc.xpath(parent_xpath)
+        for matching_parent in matching_parents:
+            child_query = matching_parent.xpath(child_tag)
+            if not child_query:
+                etree.SubElement(matching_parent, child_tag)
+
+    # Add missing mandatory attributes
+    for required_attrib in REQUIRED_ATTRIBUTES:
+        parent_xpath, attrib_key = required_attrib
+        matching_parents = doc.xpath(parent_xpath)
+        for matching_parent in matching_parents:
+            if attrib_key not in matching_parent.attrib:
+                matching_parent.attrib[attrib_key] = ""
+
+    # Enforce IATI order
     for parent in doc.xpath('//*[./*]'):  # Search for parent elements, reorder
         parent[:] = sorted(parent, key=lambda x: iati_order(x))
     return doc
