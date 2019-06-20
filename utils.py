@@ -1,6 +1,10 @@
 from lxml import etree
 import pandas as pd
 from collections import OrderedDict
+import iati.default
+import iati.validator
+import iati.utilities
+
 
 XPATH_SEPERATOR = "/"
 ATTRIB_SEPERATOR = "@"
@@ -396,6 +400,19 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
 
 
 def xml_to_csv(xml_filename="test_data/DIPR IATI data June 2019.xml", a_filename="test_data/activities.csv", t_filename="test_data/transactions.csv", b_filename="test_data/budgets.csv"):
+    # Validate FocalPoint input
+    v203_schema = iati.default.activity_schema('2.03')
+    dataset = iati.utilities.load_as_dataset(xml_filename)
+    print("Input is valid XML: {}".format(iati.validator.is_xml(dataset)))
+    print("Input is valid IATI: {}".format(iati.validator.is_iati_xml(dataset, v203_schema)))
+    fully_valid = iati.validator.is_valid(dataset, v203_schema)
+    print("Input has valid IATI schema and rules: {}".format(fully_valid))
+    if not fully_valid:
+        print("Writing input validation error CSV...")
+        error_log = iati.validator.full_validation(dataset, v203_schema)
+        error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
+        pd.DataFrame(error_records).to_csv("test_data/input_validation_errors.csv")
+
     with open(xml_filename, "r") as xmlfile:
         tree = etree.parse(xmlfile)
         root = tree.getroot()
@@ -427,6 +444,19 @@ def csv_to_xml(a_filename="test_data/activities.csv", t_filename="test_data/tran
 
     with open(xml_filename, "wb") as xmlfile:
         doc.write(xmlfile, encoding="utf-8", pretty_print=True)
+
+    # Validate
+    v203_schema = iati.default.activity_schema('2.03')
+    dataset = iati.utilities.load_as_dataset(xml_filename)
+    print("Output is valid XML: {}".format(iati.validator.is_xml(dataset)))
+    print("Output is valid IATI: {}".format(iati.validator.is_iati_xml(dataset, v203_schema)))
+    fully_valid = iati.validator.is_valid(dataset, v203_schema)
+    print("Output has valid IATI schema and rules: {}".format(fully_valid))
+    if not fully_valid:
+        print("Writing output validation error CSV...")
+        error_log = iati.validator.full_validation(dataset, v203_schema)
+        error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
+        pd.DataFrame(error_records).to_csv("test_data/output_validation_errors.csv")
 
 
 if __name__ == "__main__":
