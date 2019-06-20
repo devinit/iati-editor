@@ -256,7 +256,7 @@ def melt_iati(root):
     return (activities_list, transactions_list, budgets_list)
 
 
-def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.02"):
+def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.03"):
     root = etree.Element('iati-activities', version=iati_version)
     doc = etree.ElementTree(root)
 

@@ -1,4 +1,4 @@
-<iati-activities version="2.02">
+<iati-activities version="2.03">
   <iati-activity default-currency="GBP">
     <iati-identifier>GB-COH-06368740-P0007</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
