@@ -1,7 +1,6 @@
 from lxml import etree
 import pandas as pd
 from collections import OrderedDict
-import pdb
 
 XPATH_SEPERATOR = "/"
 ATTRIB_SEPERATOR = "@"
