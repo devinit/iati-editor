@@ -120,7 +120,10 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
 
     for transaction in transactions_list:
         activity_id = transaction["iati-activity/iati-identifier[1]"]
-        activity_elem = activity_elems[activity_id]
+        try:
+            activity_elem = activity_elems[activity_id]
+        except KeyError:
+            continue
         transaction_elem = etree.SubElement(activity_elem, 'transaction')
         transaction_filtered = OrderedDict((k[len('transaction')+1:], v) for k, v in transaction.items() if v != "" and k[len('transaction'):len('transaction')+1] != ATTRIB_SEPERATOR and k != "iati-activity/iati-identifier[1]")
         for xpath_key in transaction_filtered.keys():  # Once through first to create the elements in the correct order
@@ -155,7 +158,10 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
 
     for budget in budgets_list:
         activity_id = budget["iati-activity/iati-identifier[1]"]
-        activity_elem = activity_elems[activity_id]
+        try:
+            activity_elem = activity_elems[activity_id]
+        except KeyError:
+            continue
         budget_elem = etree.SubElement(activity_elem, 'budget')
         budget_filtered = OrderedDict((k[len('budget')+1:], v) for k, v in budget.items() if v != "" and k[len('budget'):len('budget')+1] != ATTRIB_SEPERATOR and k != "iati-activity/iati-identifier[1]")
         for xpath_key in budget_filtered.keys():  # Once through first to create the elements in the correct order
