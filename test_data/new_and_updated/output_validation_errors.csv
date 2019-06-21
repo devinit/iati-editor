@@ -1,13 +1,13 @@
 ,description,info,status
-0,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist., is not a valid Code on the FileFormat Codelist.,error
-1,An attribute that should contain a Code from a particular incomplete Codelist contained a value not on the Codelist., is not a Code on the Language Codelist.,warning
-2,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,510 is not a valid Code on the Sector Codelist.,error
-3,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist., is not a valid Code on the Sector Codelist.,error
-4,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,122 is not a valid Code on the Sector Codelist.,error
+0,An attribute that should contain a Code from a particular incomplete Codelist contained a value not on the Codelist., is not a Code on the Language Codelist.,warning
+1,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,510 is not a valid Code on the Sector Codelist.,error
+2,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist., is not a valid Code on the Sector Codelist.,error
+3,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,122 is not a valid Code on the Sector Codelist.,error
+4,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,151 is not a valid Code on the Sector Codelist.,error
 5,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,151 is not a valid Code on the Sector Codelist.,error
 6,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,151 is not a valid Code on the Sector Codelist.,error
 7,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,151 is not a valid Code on the Sector Codelist.,error
-8,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,151 is not a valid Code on the Sector Codelist.,error
+8,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist., is not a valid Code on the FileFormat Codelist.,error
 9,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist., is not a valid Code on the DocumentCategory Codelist.,error
 10,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,Parent is not a valid Code on the RelatedActivityType Codelist.,error
 11,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,Child is not a valid Code on the RelatedActivityType Codelist.,error

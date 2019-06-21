@@ -408,7 +408,7 @@ def xml_to_csv(xml_filename, csv_dir=None):
         csv_dir = os.path.splitext(xml_filename)[0]
     if not os.path.exists(csv_dir):
         os.makedirs(csv_dir)
-    print("Converting IATI XML at {} to CSV in {}".format(xml_filename, csv_dir))
+    print("Converting IATI XML at '{}' to CSV in '{}'".format(xml_filename, csv_dir))
 
     # Validate FocalPoint input
     v203_schema = iati.default.activity_schema('2.03')
@@ -464,7 +464,7 @@ def open_csv_dir(csv_dir):
 def csv_to_xml(csv_dir, xml_filename=None):
     if not xml_filename:
         xml_filename = os.path.normpath(csv_dir) + "_converted.xml"
-    print("Converting CSV files from {} to IATI XML at {}".format(csv_dir, xml_filename))
+    print("Converting CSV files from '{}' to IATI XML at '{}'".format(csv_dir, xml_filename))
 
     activities, transactions, budgets = open_csv_dir(csv_dir)
     doc = cast_iati(activities, transactions, budgets)
@@ -503,7 +503,7 @@ def elements_equal(e1, e2):
 
 
 def xml_differencer(past_xml_filename, current_xml_filename, updated_xml_filename):
-    print("Finding updated activities from {} to {}. Saving as {}...".format(past_xml_filename, current_xml_filename, updated_xml_filename))
+    print("Finding updated activities from '{}' to '{}'. Saving as '{}'...".format(past_xml_filename, current_xml_filename, updated_xml_filename))
     past_xmlfile = open(past_xml_filename, "r")
     past_tree = etree.parse(past_xmlfile)
     past_root = past_tree.getroot()
@@ -514,9 +514,10 @@ def xml_differencer(past_xml_filename, current_xml_filename, updated_xml_filenam
 
     past_ids = [iati_id.text for iati_id in past_root.xpath("//iati-identifier")]
     current_ids = [iati_id.text for iati_id in current_root.xpath("//iati-identifier")]
-    new_ids = [id for id in current_ids if id not in past_ids]
-    removed_ids = [id for id in past_ids if id not in current_ids]
-    common_ids = [id for id in past_ids if id in current_ids]
+    new_ids = [current_id for current_id in current_ids if current_id not in past_ids]
+    removed_ids = [past_id for past_id in past_ids if past_id not in current_ids]
+    common_ids = [past_id for past_id in past_ids if past_id in current_ids]
+    print("{} new activities, {} common activities, {} removed activities".format(len(new_ids), len(common_ids), len(removed_ids)))
     for common_id in common_ids:
         past_elem = past_root.xpath("//iati-activity[iati-identifier/text()='{}']".format(common_id))[0]
         current_elem = current_root.xpath("//iati-activity[iati-identifier/text()='{}']".format(common_id))[0]
