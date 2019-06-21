@@ -439,23 +439,28 @@ def xml_to_csv(xml_filename, csv_dir=None):
         b_df.to_csv(b_filename, index=False)
 
 
-def csv_to_xml(csv_dir, xml_filename=None):
-    if not xml_filename:
-        xml_filename = os.path.normpath(csv_dir) + "_converted.xml"
+def open_csv_dir(csv_dir):
     a_filename = os.path.join(csv_dir, "activities.csv")
     t_filename = os.path.join(csv_dir, "transactions.csv")
     b_filename = os.path.join(csv_dir, "budgets.csv")
 
     a_df = pd.read_csv(a_filename, dtype=str).fillna("")
-    a_df = a_df.reindex(sorted(a_df.columns), axis=1)
+    a_df = a_df.reindex(sorted(a_df.columns), axis=1).sort('iati-activity/iati-identifier[1]')
     t_df = pd.read_csv(t_filename, dtype=str).fillna("")
-    t_df = t_df.reindex(sorted(t_df.columns), axis=1)
+    t_df = t_df.reindex(sorted(t_df.columns), axis=1).sort('iati-activity/iati-identifier[1]')
     b_df = pd.read_csv(b_filename, dtype=str).fillna("")
-    b_df = b_df.reindex(sorted(b_df.columns), axis=1)
+    b_df = b_df.reindex(sorted(b_df.columns), axis=1).sort('iati-activity/iati-identifier[1]')
     activities = a_df.to_dict(into=OrderedDict, orient='records')
     transactions = t_df.to_dict(into=OrderedDict, orient='records')
     budgets = b_df.to_dict(into=OrderedDict, orient='records')
+    return (activities, transactions, budgets)
 
+
+def csv_to_xml(csv_dir, xml_filename=None):
+    if not xml_filename:
+        xml_filename = os.path.normpath(csv_dir) + "_converted.xml"
+
+    activities, transactions, budgets = open_csv_dir(csv_dir)
     doc = cast_iati(activities, transactions, budgets)
 
     with open(xml_filename, "wb") as xmlfile:
@@ -475,12 +480,14 @@ def csv_to_xml(csv_dir, xml_filename=None):
         pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "output_validation_errors.csv"))
 
 
-def xml_differencer(old_file="test_data/DIPR IATI data February 2018.xml", new_file="test_data/DIPR IATI data June 2019.xml"):
-    diff = main.diff_files(old_file, new_file, formatter=formatting.XMLFormatter())
+def xml_differencer(old_dir, new_dir):
+    old_activities, old_transactions, old_budgets = open_csv_dir(old_dir)
+    new_activities, new_transactions, new_budgets = open_csv_dir(new_dir)
     import pdb; pdb.set_trace()
 
 
 if __name__ == "__main__":
-    # xml_differencer()
     xml_to_csv("test_data/DIPR IATI data June 2019.xml")
+    xml_to_csv("test_data/DIPR IATI data February 2018.xml")
+    xml_differencer("test_data/DIPR IATI data February 2018", "test_data/DIPR IATI data June 2019")
     csv_to_xml("test_data/DIPR IATI data June 2019")
