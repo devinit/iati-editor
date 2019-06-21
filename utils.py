@@ -273,7 +273,10 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
         activity_filtered = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "" and k[len('iati-activity'):len('iati-activity')+1] != ATTRIB_SEPERATOR)
         for xpath_key in activity_filtered.keys():  # Once through first to create the elements in the correct order
             xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
-            xpath_query = activity_elem.xpath(xpath_without_attribute)
+            try:
+                xpath_query = activity_elem.xpath(xpath_without_attribute)
+            except:
+                import pdb; pdb.set_trace()
             parent_elem = activity_elem
             xpath_split = xpath_without_attribute.split(XPATH_SEPERATOR)
             creation_index = 0
@@ -405,6 +408,7 @@ def xml_to_csv(xml_filename, csv_dir=None):
         csv_dir = os.path.splitext(xml_filename)[0]
     if not os.path.exists(csv_dir):
         os.makedirs(csv_dir)
+    print("Converting IATI XML at {} to CSV in {}".format(xml_filename, csv_dir))
 
     # Validate FocalPoint input
     v203_schema = iati.default.activity_schema('2.03')
@@ -424,7 +428,8 @@ def xml_to_csv(xml_filename, csv_dir=None):
     b_filename = os.path.join(csv_dir, "budgets.csv")
 
     with open(xml_filename, "r") as xmlfile:
-        tree = etree.parse(xmlfile)
+        parser = etree.XMLParser(remove_blank_text=True)
+        tree = etree.parse(xmlfile, parser=parser)
         root = tree.getroot()
 
         activities, transactions, budgets = melt_iati(root)
@@ -459,6 +464,7 @@ def open_csv_dir(csv_dir):
 def csv_to_xml(csv_dir, xml_filename=None):
     if not xml_filename:
         xml_filename = os.path.normpath(csv_dir) + "_converted.xml"
+    print("Converting CSV files from {} to IATI XML at {}".format(csv_dir, xml_filename))
 
     activities, transactions, budgets = open_csv_dir(csv_dir)
     doc = cast_iati(activities, transactions, budgets)
@@ -480,14 +486,49 @@ def csv_to_xml(csv_dir, xml_filename=None):
         pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "output_validation_errors.csv"))
 
 
-def xml_differencer(old_dir, new_dir):
-    old_activities, old_transactions, old_budgets = open_csv_dir(old_dir)
-    new_activities, new_transactions, new_budgets = open_csv_dir(new_dir)
-    import pdb; pdb.set_trace()
+def elements_equal(e1, e2):
+    if e1.tag != e2.tag:
+        return False
+    if e1.text != e2.text:
+        return False
+    if e1.tail != e2.tail:
+        return False
+    if e1.attrib != e2.attrib:
+        return False
+    if len(e1) != len(e2):
+        return False
+    if not all(elements_equal(c1, c2) for c1, c2 in zip(e1, e2)):
+        return False
+    return True
+
+
+def xml_differencer(past_xml_filename, current_xml_filename, updated_xml_filename):
+    print("Finding updated activities from {} to {}. Saving as {}...".format(past_xml_filename, current_xml_filename, updated_xml_filename))
+    past_xmlfile = open(past_xml_filename, "r")
+    past_tree = etree.parse(past_xmlfile)
+    past_root = past_tree.getroot()
+
+    current_xmlfile = open(current_xml_filename, "r")
+    current_tree = etree.parse(current_xmlfile)
+    current_root = current_tree.getroot()
+
+    past_ids = [iati_id.text for iati_id in past_root.xpath("//iati-identifier")]
+    current_ids = [iati_id.text for iati_id in current_root.xpath("//iati-identifier")]
+    new_ids = [id for id in current_ids if id not in past_ids]
+    removed_ids = [id for id in past_ids if id not in current_ids]
+    common_ids = [id for id in past_ids if id in current_ids]
+    for common_id in common_ids:
+        past_elem = past_root.xpath("//iati-activity[iati-identifier/text()='{}']".format(common_id))[0]
+        current_elem = current_root.xpath("//iati-activity[iati-identifier/text()='{}']".format(common_id))[0]
+        if elements_equal(past_elem, current_elem):
+            current_elem.getparent().remove(current_elem)
+
+    doc = etree.ElementTree(current_root)
+    with open(updated_xml_filename, "wb") as xmlfile:
+        doc.write(xmlfile, encoding="utf-8", pretty_print=True)
 
 
 if __name__ == "__main__":
-    xml_to_csv("test_data/DIPR IATI data June 2019.xml")
-    xml_to_csv("test_data/DIPR IATI data February 2018.xml")
-    xml_differencer("test_data/DIPR IATI data February 2018", "test_data/DIPR IATI data June 2019")
-    csv_to_xml("test_data/DIPR IATI data June 2019")
+    xml_differencer("test_data/DIPR IATI data February 2018.xml", "test_data/DIPR IATI data June 2019.xml", "test_data/new_and_updated.xml")
+    xml_to_csv("test_data/new_and_updated.xml")
+    csv_to_xml("test_data/new_and_updated")
