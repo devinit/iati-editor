@@ -1,3 +1,4 @@
+import os
 from lxml import etree
 import pandas as pd
 from collections import OrderedDict
@@ -399,7 +400,12 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
     return doc
 
 
-def xml_to_csv(xml_filename="test_data/DIPR IATI data June 2019.xml", a_filename="test_data/activities.csv", t_filename="test_data/transactions.csv", b_filename="test_data/budgets.csv"):
+def xml_to_csv(xml_filename, csv_dir=None):
+    if not csv_dir:
+        csv_dir = os.path.splitext(xml_filename)[0]
+    if not os.path.exists(csv_dir):
+        os.makedirs(csv_dir)
+
     # Validate FocalPoint input
     v203_schema = iati.default.activity_schema('2.03')
     dataset = iati.utilities.load_as_dataset(xml_filename)
@@ -411,7 +417,11 @@ def xml_to_csv(xml_filename="test_data/DIPR IATI data June 2019.xml", a_filename
         print("Writing input validation error CSV...")
         error_log = iati.validator.full_validation(dataset, v203_schema)
         error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
-        pd.DataFrame(error_records).to_csv("test_data/input_validation_errors.csv")
+        pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "input_validation_errors.csv"))
+
+    a_filename = os.path.join(csv_dir, "activities.csv")
+    t_filename = os.path.join(csv_dir, "transactions.csv")
+    b_filename = os.path.join(csv_dir, "budgets.csv")
 
     with open(xml_filename, "r") as xmlfile:
         tree = etree.parse(xmlfile)
@@ -429,7 +439,13 @@ def xml_to_csv(xml_filename="test_data/DIPR IATI data June 2019.xml", a_filename
         b_df.to_csv(b_filename, index=False)
 
 
-def csv_to_xml(a_filename="test_data/activities.csv", t_filename="test_data/transactions.csv", b_filename="test_data/budgets.csv", xml_filename="test_data/output.xml"):
+def csv_to_xml(csv_dir, xml_filename=None):
+    if not xml_filename:
+        xml_filename = os.path.normpath(csv_dir) + "_converted.xml"
+    a_filename = os.path.join(csv_dir, "activities.csv")
+    t_filename = os.path.join(csv_dir, "transactions.csv")
+    b_filename = os.path.join(csv_dir, "budgets.csv")
+
     a_df = pd.read_csv(a_filename, dtype=str).fillna("")
     a_df = a_df.reindex(sorted(a_df.columns), axis=1)
     t_df = pd.read_csv(t_filename, dtype=str).fillna("")
@@ -456,9 +472,15 @@ def csv_to_xml(a_filename="test_data/activities.csv", t_filename="test_data/tran
         print("Writing output validation error CSV...")
         error_log = iati.validator.full_validation(dataset, v203_schema)
         error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
-        pd.DataFrame(error_records).to_csv("test_data/output_validation_errors.csv")
+        pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "output_validation_errors.csv"))
+
+
+def xml_differencer(old_file="test_data/DIPR IATI data February 2018.xml", new_file="test_data/DIPR IATI data June 2019.xml"):
+    diff = main.diff_files(old_file, new_file, formatter=formatting.XMLFormatter())
+    import pdb; pdb.set_trace()
 
 
 if __name__ == "__main__":
-    xml_to_csv()
-    csv_to_xml()
+    # xml_differencer()
+    xml_to_csv("test_data/DIPR IATI data June 2019.xml")
+    csv_to_xml("test_data/DIPR IATI data June 2019")
