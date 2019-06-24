@@ -189,7 +189,10 @@ def xpath_sort(xpath_key):
     xpath_hierarchy = len(xpath_key.split(XPATH_SEPERATOR))
     xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
     split_path = xpath_without_attribute.split("[")
-    path_index = int(split_path[-1][:-1])
+    try:
+        path_index = int(split_path[-1][:-1])
+    except ValueError:
+        path_index = 0
     return xpath_hierarchy, path_index, xpath_key
 
 
