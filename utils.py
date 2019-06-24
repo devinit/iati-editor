@@ -418,7 +418,7 @@ def xml_to_csv(xml_filename, csv_dir=None):
     fully_valid = iati.validator.is_valid(dataset, v203_schema)
     print("Input has valid IATI schema and rules: {}".format(fully_valid))
     if not fully_valid:
-        print("Writing input validation error CSV...")
+        print("Writing input validation error CSV... Done.")
         error_log = iati.validator.full_validation(dataset, v203_schema)
         error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
         pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "input_validation_errors.csv"))
@@ -480,7 +480,7 @@ def csv_to_xml(csv_dir, xml_filename=None):
     fully_valid = iati.validator.is_valid(dataset, v203_schema)
     print("Output has valid IATI schema and rules: {}".format(fully_valid))
     if not fully_valid:
-        print("Writing output validation error CSV...")
+        print("Writing output validation error CSV... Done.")
         error_log = iati.validator.full_validation(dataset, v203_schema)
         error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
         pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "output_validation_errors.csv"))
@@ -503,7 +503,7 @@ def elements_equal(e1, e2):
 
 
 def xml_differencer(past_xml_filename, current_xml_filename, updated_xml_filename):
-    print("Finding updated activities from '{}' to '{}'. Saving as '{}'...".format(past_xml_filename, current_xml_filename, updated_xml_filename))
+    print("Finding updated activities from '{}' to '{}'. Saving as '{}'... Done.".format(past_xml_filename, current_xml_filename, updated_xml_filename))
     past_xmlfile = open(past_xml_filename, "r")
     past_tree = etree.parse(past_xmlfile)
     past_root = past_tree.getroot()
