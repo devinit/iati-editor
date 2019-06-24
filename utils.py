@@ -186,10 +186,11 @@ REQUIRED_ATTRIBUTES = [
 
 
 def xpath_sort(xpath_key):
+    xpath_hierarchy = len(xpath_key.split(XPATH_SEPERATOR))
     xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
     split_path = xpath_without_attribute.split("[")
     path_index = int(split_path[-1][:-1])
-    return path_index, xpath_key
+    return xpath_hierarchy, path_index, xpath_key
 
 
 def iati_order(xml_element):
