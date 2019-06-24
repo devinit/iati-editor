@@ -189,7 +189,7 @@ REQUIRED_ATTRIBUTES = [
 def xpath_sort(xpath_key):
     pattern = re.compile(r"\[(\d+)\]")
     xpath_hierarchy = len(xpath_key.split(XPATH_SEPERATOR))
-    path_indexes = [int(found) for found in pattern.findall(item)]
+    path_indexes = [int(found) for found in pattern.findall(xpath_key)]
     return xpath_hierarchy, path_indexes, xpath_key
 
 
