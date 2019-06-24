@@ -10,6 +10,7 @@ description,narrative,description/narrative,1,0
 iati-activity,participating-org,iati-activity/participating-org,1,0
 participating-org,narrative,participating-org/narrative,0,0
 iati-activity,other-identifier,iati-activity/other-identifier,0,0
+other-identifier,owner-org,other-identifier/owner-org,0,1
 iati-activity,activity-status,iati-activity/activity-status,1,1
 iati-activity,activity-date,iati-activity/activity-date,1,0
 activity-date,narrative,activity-date/narrative,0,0
