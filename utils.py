@@ -185,6 +185,13 @@ REQUIRED_ATTRIBUTES = [
 ]
 
 
+def xpath_sort(xpath_key):
+    xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
+    split_path = xpath_without_attribute.split("[")
+    path_index = int(split_path[-1][:-1])
+    return path_index, xpath_key
+
+
 def iati_order(xml_element):
     family_tag = "{}{}{}".format(xml_element.getparent().tag, XPATH_SEPERATOR, xml_element.tag)
     return SORT_ORDER[family_tag]
@@ -273,10 +280,7 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
         activity_filtered = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "" and k[len('iati-activity'):len('iati-activity')+1] != ATTRIB_SEPERATOR)
         for xpath_key in activity_filtered.keys():  # Once through first to create the elements in the correct order
             xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
-            try:
-                xpath_query = activity_elem.xpath(xpath_without_attribute)
-            except:
-                import pdb; pdb.set_trace()
+            xpath_query = activity_elem.xpath(xpath_without_attribute)
             parent_elem = activity_elem
             xpath_split = xpath_without_attribute.split(XPATH_SEPERATOR)
             creation_index = 0
@@ -434,13 +438,13 @@ def xml_to_csv(xml_filename, csv_dir=None):
 
         activities, transactions, budgets = melt_iati(root)
         a_df = pd.DataFrame(activities, dtype=str)
-        a_df = a_df.reindex(sorted(a_df.columns), axis=1)
+        a_df = a_df.reindex(sorted(a_df.columns, key=xpath_sort), axis=1)
         a_df.to_csv(a_filename, index=False)
         t_df = pd.DataFrame(transactions, dtype=str)
-        t_df = t_df.reindex(sorted(t_df.columns), axis=1)
+        t_df = t_df.reindex(sorted(t_df.columns, key=xpath_sort), axis=1)
         t_df.to_csv(t_filename, index=False)
         b_df = pd.DataFrame(budgets, dtype=str)
-        b_df = b_df.reindex(sorted(b_df.columns), axis=1)
+        b_df = b_df.reindex(sorted(b_df.columns, key=xpath_sort), axis=1)
         b_df.to_csv(b_filename, index=False)
 
 
@@ -450,11 +454,11 @@ def open_csv_dir(csv_dir):
     b_filename = os.path.join(csv_dir, "budgets.csv")
 
     a_df = pd.read_csv(a_filename, dtype=str).fillna("")
-    a_df = a_df.reindex(sorted(a_df.columns), axis=1).sort_values('iati-activity/iati-identifier[1]')
+    a_df = a_df.reindex(sorted(a_df.columns, key=xpath_sort), axis=1).sort_values('iati-activity/iati-identifier[1]')
     t_df = pd.read_csv(t_filename, dtype=str).fillna("")
-    t_df = t_df.reindex(sorted(t_df.columns), axis=1).sort_values('iati-activity/iati-identifier[1]')
+    t_df = t_df.reindex(sorted(t_df.columns, key=xpath_sort), axis=1).sort_values('iati-activity/iati-identifier[1]')
     b_df = pd.read_csv(b_filename, dtype=str).fillna("")
-    b_df = b_df.reindex(sorted(b_df.columns), axis=1).sort_values('iati-activity/iati-identifier[1]')
+    b_df = b_df.reindex(sorted(b_df.columns, key=xpath_sort), axis=1).sort_values('iati-activity/iati-identifier[1]')
     activities = a_df.to_dict(into=OrderedDict, orient='records')
     transactions = t_df.to_dict(into=OrderedDict, orient='records')
     budgets = b_df.to_dict(into=OrderedDict, orient='records')
