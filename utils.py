@@ -426,6 +426,8 @@ def xml_to_csv(xml_filename, csv_dir=None):
         b_df = pd.DataFrame(budgets, dtype=str)
         b_df = b_df.reindex(sorted(b_df.columns), axis=1)
         b_df.to_csv(b_filename, index=False)
+    
+    print("Done.")
 
 
 def open_csv_dir(csv_dir):
@@ -455,6 +457,8 @@ def csv_to_xml(csv_dir, xml_filename=None):
 
     with open(xml_filename, "wb") as xmlfile:
         doc.write(xmlfile, encoding="utf-8", pretty_print=True)
+        
+    print("Done.")
 
 
 def elements_equal(e1, e2):
