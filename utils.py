@@ -24,7 +24,7 @@ SORT_ORDER = {
     "participating-org/narrative": 9,
     "iati-activity/other-identifier": 10,
     "other-identifier/owner-org": 11,
-    "other-org/narrative": 12,
+    "owner-org/narrative": 12,
     "iati-activity/activity-status": 13,
     "iati-activity/activity-date": 14,
     "activity-date/narrative": 15,
