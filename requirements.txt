@@ -3,7 +3,7 @@ jsonschema==2.6.0
 lxml==4.2.4
 numpy==1.16.4
 pandas==0.24.2
-git+https://github.com/akmiller01/pyIATI@master#egg=pyIATI
+pyIATI==0.4.1
 python-dateutil==2.8.0
 pytz==2019.1
 PyYAML==3.13
