@@ -1,12 +1,41 @@
 import os
 import re
+import sys
+import glob
 from lxml import etree
 import pandas as pd
-from collections import OrderedDict
-import iati.default
+from collections import OrderedDict, defaultdict
+import iati
 import iati.validator
 import iati.utilities
+from iati.schemas import ActivitySchema
 
+#Initialize app, checking if frozen in exe
+if getattr(sys, 'frozen', False):
+    VERSION_FOLDER = os.path.abspath(os.path.join(sys.executable, '..','2-03'))
+else:
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    VERSION_FOLDER = os.path.abspath(os.path.join(dir_path,"2-03"))
+
+# Initialize schema
+v203_schema = ActivitySchema(os.path.join(VERSION_FOLDER, "schemas", "iati-activities-schema.xsd"))
+
+# Load codelists
+CODELISTS = defaultdict(dict)
+codelist_paths = glob.glob(os.path.join(VERSION_FOLDER, "codelists", "*.xml"))
+for codelist_path in codelist_paths:
+    _, filename = os.path.split(codelist_path)
+    name = filename[:-len(iati.resources.FILE_CODELIST_EXTENSION)]  # Get the name of the codelist, without the '.xml' file extension
+    if name not in CODELISTS.keys():
+        xml_str = iati.utilities.load_as_string(codelist_path)
+        codelist_found = iati.Codelist(name, xml=xml_str)
+        CODELISTS[name] = codelist_found
+        v203_schema.codelists.add(CODELISTS[name])
+
+# Load rules
+ruleset_path = os.path.join(VERSION_FOLDER, "rulesets","standard_ruleset.json")
+ruleset_str = iati.utilities.load_as_string(ruleset_path)
+v203_schema.rulesets.add(iati.Ruleset(ruleset_str))
 
 XPATH_SEPERATOR = "/"
 ATTRIB_SEPERATOR = "@"
@@ -418,7 +447,6 @@ def xml_to_csv(xml_filename, csv_dir=None):
     print("Converting IATI XML at '{}' to CSV in '{}'".format(xml_filename, csv_dir))
 
     # Validate FocalPoint input
-    v203_schema = iati.default.activity_schema('2.03')
     dataset = iati.utilities.load_as_dataset(xml_filename)
     print("Input is valid XML: {}".format(iati.validator.is_xml(dataset)))
     print("Input is valid IATI: {}".format(iati.validator.is_iati_xml(dataset, v203_schema)))
@@ -480,7 +508,6 @@ def csv_to_xml(csv_dir, xml_filename=None):
         doc.write(xmlfile, encoding="utf-8", pretty_print=True)
 
     # Validate
-    v203_schema = iati.default.activity_schema('2.03')
     dataset = iati.utilities.load_as_dataset(xml_filename)
     print("Output is valid XML: {}".format(iati.validator.is_xml(dataset)))
     print("Output is valid IATI: {}".format(iati.validator.is_iati_xml(dataset, v203_schema)))
