@@ -15,3 +15,11 @@ python3 diff.py
 python3 xml2csv.py
 python3 csv2xml.py
 ```
+
+## To bundle:
+```
+pyinstaller -w --onefile xml2csv.py
+pyinstaller -w --onefile csv2xml.py
+pyinstaller -w --onefile diff.py
+cp -R iati dist/
+```

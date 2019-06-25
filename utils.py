@@ -2,40 +2,37 @@ import os
 import re
 import sys
 import glob
+import json
+import jsonschema
 from lxml import etree
 import pandas as pd
 from collections import OrderedDict, defaultdict
 import iati
 import iati.validator
 import iati.utilities
-from iati.schemas import ActivitySchema
+import iati.resources
 
-#Initialize app, checking if frozen in exe
+
+# Initialize app, checking if frozen in exe
 if getattr(sys, 'frozen', False):
-    VERSION_FOLDER = os.path.abspath(os.path.join(sys.executable, '..','2-03'))
+    IATI_FOLDER = os.path.abspath(os.path.join(sys.executable, '..','iati'))
 else:
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    VERSION_FOLDER = os.path.abspath(os.path.join(dir_path,"2-03"))
+    IATI_FOLDER = os.path.abspath(os.path.join(dir_path,"iati"))
+    
+# Override methods to allow freezing in one file
+def get_codelist_paths(version):
+    folder_path = os.path.join(IATI_FOLDER, "resources", "standard", iati.resources.folder_name_for_version(version), "codelists")
+    files = glob.glob(os.path.join(folder_path, "*.xml"))
+    return files
+iati.resources.get_codelist_paths = get_codelist_paths
 
-# Initialize schema
-v203_schema = ActivitySchema(os.path.join(VERSION_FOLDER, "schemas", "iati-activities-schema.xsd"))
 
-# Load codelists
-CODELISTS = defaultdict(dict)
-codelist_paths = glob.glob(os.path.join(VERSION_FOLDER, "codelists", "*.xml"))
-for codelist_path in codelist_paths:
-    _, filename = os.path.split(codelist_path)
-    name = filename[:-len(iati.resources.FILE_CODELIST_EXTENSION)]  # Get the name of the codelist, without the '.xml' file extension
-    if name not in CODELISTS.keys():
-        xml_str = iati.utilities.load_as_string(codelist_path)
-        codelist_found = iati.Codelist(name, xml=xml_str)
-        CODELISTS[name] = codelist_found
-        v203_schema.codelists.add(CODELISTS[name])
+def resource_filesystem_path(path):
+    return os.path.join(IATI_FOLDER, path)
+iati.resources.resource_filesystem_path = resource_filesystem_path
 
-# Load rules
-ruleset_path = os.path.join(VERSION_FOLDER, "rulesets","standard_ruleset.json")
-ruleset_str = iati.utilities.load_as_string(ruleset_path)
-v203_schema.rulesets.add(iati.Ruleset(ruleset_str))
+v203_schema = iati.default.activity_schema("2.03")
 
 XPATH_SEPERATOR = "/"
 ATTRIB_SEPERATOR = "@"
