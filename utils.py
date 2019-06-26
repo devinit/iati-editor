@@ -19,7 +19,7 @@ if getattr(sys, 'frozen', False):
 else:
     dir_path = os.path.dirname(os.path.realpath(__file__))
     IATI_FOLDER = os.path.abspath(os.path.join(dir_path,"iati"))
-    
+
 # Override methods to allow freezing in one file
 def get_codelist_paths(version):
     folder_path = os.path.join(IATI_FOLDER, "resources", "standard", iati.resources.folder_name_for_version(version), "codelists")
@@ -224,6 +224,17 @@ def xpath_sort(xpath_key):
 def iati_order(xml_element):
     family_tag = "{}{}{}".format(xml_element.getparent().tag, XPATH_SEPERATOR, xml_element.tag)
     return SORT_ORDER[family_tag]
+
+
+def iati_order_xpath(xpath_key):
+    xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
+    xpath_split = [elem_xpath.split("[")[0] for elem_xpath in xpath_without_attribute.split(XPATH_SEPERATOR)]
+    if len(xpath_split) > 1:
+        elem_tag = xpath_split[-1]
+        parent_tag = xpath_split[-2]
+        family_tag = "{}{}{}".format(parent_tag, XPATH_SEPERATOR, elem_tag)
+        return SORT_ORDER[family_tag], xpath_key
+    return 0, xpath_key
 
 
 def remove_xpath_index(relative_xpath):
@@ -466,13 +477,13 @@ def xml_to_csv(xml_filename, csv_dir=None):
 
         activities, transactions, budgets = melt_iati(root)
         a_df = pd.DataFrame(activities, dtype=str)
-        a_df = a_df.reindex(sorted(a_df.columns, key=xpath_sort), axis=1)
+        a_df = a_df.reindex(sorted(a_df.columns, key=iati_order_xpath), axis=1).sort_values('iati-activity/iati-identifier[1]')
         a_df.to_csv(a_filename, index=False)
         t_df = pd.DataFrame(transactions, dtype=str)
-        t_df = t_df.reindex(sorted(t_df.columns, key=xpath_sort), axis=1)
+        t_df = t_df.reindex(sorted(t_df.columns, key=iati_order_xpath), axis=1).sort_values('iati-activity/iati-identifier[1]')
         t_df.to_csv(t_filename, index=False)
         b_df = pd.DataFrame(budgets, dtype=str)
-        b_df = b_df.reindex(sorted(b_df.columns, key=xpath_sort), axis=1)
+        b_df = b_df.reindex(sorted(b_df.columns, key=iati_order_xpath), axis=1).sort_values('iati-activity/iati-identifier[1]')
         b_df.to_csv(b_filename, index=False)
 
 

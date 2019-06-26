@@ -238,11 +238,11 @@
 236,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist.,Parent is not a valid Code on the RelatedActivityType Codelist.,error
 237,An attribute that requires a Code from a particular complete Codelist contained a value not on the Codelist., is not a valid Code on the RelatedActivityType Codelist.,error
 238,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
-239,A Dataset does not conform with a 'regex_matches' Rule.,Each instance of `reporting-org/@ref` and `iati-identifier` and `participating-org/@ref` and `transaction/provider-org/@ref` and `transaction/receiver-org/@ref` within each `//iati-activity` must match the regular expression `[^\/\&\|\?]+`.,error
+239,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
 240,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
 241,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
 242,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
-243,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
+243,A Dataset does not conform with a 'regex_matches' Rule.,Each instance of `reporting-org/@ref` and `iati-identifier` and `participating-org/@ref` and `transaction/provider-org/@ref` and `transaction/receiver-org/@ref` within each `//iati-activity` must match the regular expression `[^\/\&\|\?]+`.,error
 244,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
 245,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
 246,The test for a given Rule was skipped.,The exact reason for why the Rule was skipped is unknown.,warning
