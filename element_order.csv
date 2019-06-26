@@ -51,10 +51,14 @@ location,location-class,location/location-class,0,1
 location,feature-designation,location/feature-designation,0,1
 iati-activity,sector,iati-activity/sector,0,0
 sector,narrative,sector/narrative,0,0
+iati-activity,tag,iati-activity/tag,0,0
+tag,narrative,tag/narrative,0,0
 iati-activity,country-budget-items,iati-activity/country-budget-items,0,1
 country-budget-items,budget-item,country-budget-items/budget-item,1,0
 budget-item,description,budget-item/description,0,1
 description,narrative,description/narrative,1,0
+iati-activity,humanitarian-scope,iati-activity/humanitarian-scope,0,0
+humanitarian-scope,narrative,humanitarian-scope/narrative,0,0
 iati-activity,policy-marker,iati-activity/policy-marker,0,0
 policy-marker,narrative,policy-marker/narrative,0,0
 iati-activity,collaboration-type,iati-activity/collaboration-type,0,1

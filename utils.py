@@ -94,82 +94,86 @@ SORT_ORDER = {
     "location/feature-designation": 48,
     "iati-activity/sector": 49,
     "sector/narrative": 50,
-    "iati-activity/country-budget-items": 51,
-    "country-budget-items/budget-item": 52,
-    "budget-item/description": 53,
-    "iati-activity/policy-marker": 54,
-    "policy-marker/narrative": 55,
-    "iati-activity/collaboration-type": 56,
-    "iati-activity/default-flow-type": 57,
-    "iati-activity/default-finance-type": 58,
-    "iati-activity/default-aid-type": 59,
-    "iati-activity/default-tied-status": 60,
-    "iati-activity/budget": 61,
-    "budget/period-start": 62,
-    "budget/period-end": 63,
-    "budget/value": 64,
-    "iati-activity/planned-disbursement": 65,
-    "planned-disbursement/period-start": 66,
-    "planned-disbursement/period-end": 67,
-    "planned-disbursement/value": 68,
-    "iati-activity/capital-spend": 69,
-    "iati-activity/transaction": 70,
-    "transaction/transaction-type": 71,
-    "transaction/transaction-date": 72,
-    "transaction/value": 73,
-    "transaction/description": 74,
-    "transaction/provider-org": 75,
-    "provider-org/narrative": 76,
-    "transaction/receiver-org": 77,
-    "receiver-org/narrative": 78,
-    "transaction/disbursement-channel": 79,
-    "transaction/sector": 80,
-    "transaction/recipient-country": 81,
-    "transaction/recipient-region": 82,
-    "transaction/flow-type": 83,
-    "transaction/finance-type": 84,
-    "transaction/aid-type": 85,
-    "transaction/tied-status": 86,
-    "iati-activity/document-link": 87,
-    "document-link/title": 88,
-    "document-link/category": 89,
-    "document-link/language": 90,
-    "iati-activity/related-activity": 91,
-    "iati-activity/legacy-data": 92,
-    "iati-activity/conditions": 93,
-    "conditions/condition": 94,
-    "condition/narrative": 95,
-    "iati-activity/result": 96,
-    "result/title": 97,
-    "result/description": 98,
-    "result/indicator": 99,
-    "indicator/title": 100,
-    "indicator/description": 101,
-    "indicator/baseline": 102,
-    "baseline/comment": 103,
-    "comment/narrative": 104,
-    "indicator/period": 105,
-    "period/period-start": 106,
-    "period/period-end": 107,
-    "period/target": 108,
-    "target/comment": 109,
-    "period/actual": 110,
-    "actual/comment": 111,
-    "iati-activity/crs-add": 112,
-    "crs-add/other-flags": 113,
-    "crs-add/loan-terms": 114,
-    "loan-terms/repayment-type": 115,
-    "loan-terms/repayment-plan": 116,
-    "loan-terms/commitment-date": 117,
-    "loan-terms/repayment-first-date": 118,
-    "loan-terms/repayment-final-date": 119,
-    "crs-add/loan-status": 120,
-    "loan-status/interest-received": 121,
-    "loan-status/principal-outstanding": 122,
-    "loan-status/principal-arrears": 123,
-    "loan-status/interest-arrears": 124,
-    "iati-activity/fss": 125,
-    "fss/forecast": 126
+    "iati-activity/tag": 51,
+    "tag/narrative": 52,
+    "iati-activity/country-budget-items": 53,
+    "country-budget-items/budget-item": 54,
+    "budget-item/description": 55,
+    "iati-activity/humanitarian-scope": 56,
+    "humanitarian-scope/narrative": 57,
+    "iati-activity/policy-marker": 58,
+    "policy-marker/narrative": 59,
+    "iati-activity/collaboration-type": 60,
+    "iati-activity/default-flow-type": 61,
+    "iati-activity/default-finance-type": 62,
+    "iati-activity/default-aid-type": 63,
+    "iati-activity/default-tied-status": 64,
+    "iati-activity/budget": 65,
+    "budget/period-start": 66,
+    "budget/period-end": 67,
+    "budget/value": 68,
+    "iati-activity/planned-disbursement": 69,
+    "planned-disbursement/period-start": 70,
+    "planned-disbursement/period-end": 71,
+    "planned-disbursement/value": 72,
+    "iati-activity/capital-spend": 73,
+    "iati-activity/transaction": 74,
+    "transaction/transaction-type": 75,
+    "transaction/transaction-date": 76,
+    "transaction/value": 77,
+    "transaction/description": 78,
+    "transaction/provider-org": 79,
+    "provider-org/narrative": 80,
+    "transaction/receiver-org": 81,
+    "receiver-org/narrative": 82,
+    "transaction/disbursement-channel": 83,
+    "transaction/sector": 84,
+    "transaction/recipient-country": 85,
+    "transaction/recipient-region": 86,
+    "transaction/flow-type": 87,
+    "transaction/finance-type": 88,
+    "transaction/aid-type": 89,
+    "transaction/tied-status": 90,
+    "iati-activity/document-link": 91,
+    "document-link/title": 92,
+    "document-link/category": 93,
+    "document-link/language": 94,
+    "iati-activity/related-activity": 95,
+    "iati-activity/legacy-data": 96,
+    "iati-activity/conditions": 97,
+    "conditions/condition": 98,
+    "condition/narrative": 99,
+    "iati-activity/result": 100,
+    "result/title": 101,
+    "result/description": 102,
+    "result/indicator": 103,
+    "indicator/title": 104,
+    "indicator/description": 105,
+    "indicator/baseline": 106,
+    "baseline/comment": 107,
+    "comment/narrative": 108,
+    "indicator/period": 109,
+    "period/period-start": 110,
+    "period/period-end": 111,
+    "period/target": 112,
+    "target/comment": 113,
+    "period/actual": 114,
+    "actual/comment": 115,
+    "iati-activity/crs-add": 116,
+    "crs-add/other-flags": 117,
+    "crs-add/loan-terms": 118,
+    "loan-terms/repayment-type": 119,
+    "loan-terms/repayment-plan": 120,
+    "loan-terms/commitment-date": 121,
+    "loan-terms/repayment-first-date": 122,
+    "loan-terms/repayment-final-date": 123,
+    "crs-add/loan-status": 124,
+    "loan-status/interest-received": 125,
+    "loan-status/principal-outstanding": 126,
+    "loan-status/principal-arrears": 127,
+    "loan-status/interest-arrears": 128,
+    "iati-activity/fss": 129,
+    "fss/forecast": 130
 }
 REQUIRED_CHILDREN = [
     ("//iati-activities", "iati-activity"),
@@ -217,6 +221,70 @@ REQUIRED_ATTRIBUTES = [
     ("//language", "code"),
     ("//sector", "code")
 ]
+ADDITIONAL_TAGS = [
+    "iati-activity/iati-identifier",
+    "iati-activity/activity-scope",
+    "iati-activity/recipient-region",
+    "iati-activity/location",
+    "iati-activity/tag",
+    "iati-activity/humanitarian-scope",
+    "iati-activity/policy-marker",
+    "iati-activity/collaboration-type",
+    "iati-activity/default-flow-type",
+    "iati-activity/default-finance-type",
+    "iati-activity/default-aid-type",
+    "iati-activity/default-tied-status",
+    "iati-activity/conditions"
+]
+DEFAULT_ADDITIONAL_COLUMNS = [
+    ("iati-activity/iati-identifier[1]", ""),
+    ("iati-activity/activity-scope[1]", ""),
+    ("iati-activity/activity-scope[1]@code", ""),
+    ("iati-activity/recipient-region[1]", ""),
+    ("iati-activity/recipient-region[1]@code", ""),
+    ("iati-activity/recipient-region[1]@vocabulary", ""),
+    ("iati-activity/recipient-region[1]@percentage", ""),
+    ("iati-activity/location[1]", ""),
+    ("iati-activity/location[1]@ref", ""),
+    ("iati-activity/location[1]/location-reach[1]", ""),
+    ("iati-activity/location[1]/location-reach[1]@code", "2"),
+    ("iati-activity/location[1]/location-id[1]", ""),
+    ("iati-activity/location[1]/location-id[1]@vocabulary", ""),
+    ("iati-activity/location[1]/location-id[1]@code", ""),
+    ("iati-activity/location[1]/name[1]", ""),
+    ("iati-activity/location[1]/name[1]/narrative[1]", ""),
+    ("iati-activity/location[1]/exactness[1]", ""),
+    ("iati-activity/location[1]/exactness[1]@code", "2"),
+    ("iati-activity/tag[1]", ""),
+    ("iati-activity/tag[1]@vocabulary", ""),
+    ("iati-activity/tag[1]@code", ""),
+    ("iati-activity/tag[1]/narrative", ""),
+    ("iati-activity/humanitarian-scope[1]", ""),
+    ("iati-activity/humanitarian-scope[1]@type", ""),
+    ("iati-activity/humanitarian-scope[1]@vocabulary", ""),
+    ("iati-activity/humanitarian-scope[1]@code", ""),
+    ("iati-activity/humanitarian-scope[1]/narrative[1]", ""),
+    ("iati-activity/policy-marker[1]", ""),
+    ("iati-activity/policy-marker[1]@vocabulary", ""),
+    ("iati-activity/policy-marker[1]@code", ""),
+    ("iati-activity/policy-marker[1]@significance", ""),
+    ("iati-activity/policy-marker[1]/narrative[1]", ""),
+    ("iati-activity/collaboration-type[1]", ""),
+    ("iati-activity/collaboration-type[1]@code", ""),
+    ("iati-activity/default-flow-type[1]", ""),
+    ("iati-activity/default-flow-type[1]@code", ""),
+    ("iati-activity/default-finance-type[1]", ""),
+    ("iati-activity/default-finance-type[1]@code", ""),
+    ("iati-activity/default-aid-type[1]", ""),
+    ("iati-activity/default-aid-type[1]@code", ""),
+    ("iati-activity/default-aid-type[1]@vocabulary", ""),
+    ("iati-activity/default-tied-status[1]", ""),
+    ("iati-activity/default-tied-status[1]@code", ""),
+    ("iati-activity/conditions[1]", ""),
+    ("iati-activity/conditions[1]@attached", ""),
+    ("iati-activity/conditions[1]/condition[1]", ""),
+    ("iati-activity/conditions[1]/condition[1]/narrative[1]", "")
+]
 
 
 def xpath_sort(xpath_key):
@@ -240,6 +308,18 @@ def iati_order_xpath(xpath_key):
         family_tag = "{}{}{}".format(parent_tag, XPATH_SEPERATOR, elem_tag)
         return SORT_ORDER[family_tag], xpath_key
     return 0, xpath_key
+
+
+def create_ancestor_tag(absolute_xpath):
+    xpath_without_attribute = absolute_xpath.split(ATTRIB_SEPERATOR)[0]
+    xpath_split = [elem_xpath.split("[")[0] for elem_xpath in xpath_without_attribute.split(XPATH_SEPERATOR)]
+    if len(xpath_split) > 1:
+        elem_tag = xpath_split[1]
+        parent_tag = xpath_split[0]
+        ancestor_tag = "{}{}{}".format(parent_tag, XPATH_SEPERATOR, elem_tag)
+    else:
+        ancestor_tag = xpath_without_attribute
+    return ancestor_tag
 
 
 def remove_xpath_index(relative_xpath):
@@ -287,13 +367,20 @@ def recursive_tree_traversal(element, absolute_xpath, element_dictionary):
 
 
 def melt_iati(root):
-    activities_list = []
+    activities_list_static = []
+    activities_list_additions = []
     transactions_list = []
     budgets_list = []
     activities = root.getchildren()
     for activity in activities:
         activity_dict = recursive_tree_traversal(activity, "iati-activity", {})
-        activities_list.append(activity_dict)
+        activity_dict_static = {k: v for k, v in activity_dict.items() if create_ancestor_tag(k) not in ADDITIONAL_TAGS or create_ancestor_tag(k) == "iati-activity/iati-identifier"}
+        activity_dict_additions = {k: v for k, v in activity_dict.items() if create_ancestor_tag(k) in ADDITIONAL_TAGS}
+        for default_col, default_val in DEFAULT_ADDITIONAL_COLUMNS:
+            if default_col not in activity_dict_additions.keys():
+                activity_dict_additions[default_col] = default_val
+        activities_list_static.append(activity_dict_static)
+        activities_list_additions.append(activity_dict_additions)
 
         # To key transactions and budgets
         activity_id = activity_dict["iati-activity/iati-identifier[1]"]
@@ -310,7 +397,7 @@ def melt_iati(root):
             budget_dict["iati-activity/iati-identifier[1]"] = activity_id
             budgets_list.append(budget_dict)
 
-    return (activities_list, transactions_list, budgets_list)
+    return (activities_list_static, activities_list_additions, transactions_list, budgets_list)
 
 
 def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.03"):
@@ -471,7 +558,8 @@ def xml_to_csv(xml_filename, csv_dir=None):
         error_records = [{"info": err_rec.info, "description": err_rec.description, "status": err_rec.status} for err_rec in error_log]
         pd.DataFrame(error_records).to_csv(os.path.join(csv_dir, "input_validation_errors.csv"))
 
-    a_filename = os.path.join(csv_dir, "activities.csv")
+    a_filename = os.path.join(csv_dir, "activities_static.csv")
+    a_add_filename = os.path.join(csv_dir, "activities_additions.csv")
     t_filename = os.path.join(csv_dir, "transactions.csv")
     b_filename = os.path.join(csv_dir, "budgets.csv")
 
@@ -480,10 +568,13 @@ def xml_to_csv(xml_filename, csv_dir=None):
         tree = etree.parse(xmlfile, parser=parser)
         root = tree.getroot()
 
-        activities, transactions, budgets = melt_iati(root)
-        a_df = pd.DataFrame(activities, dtype=str)
+        activities_static, activites_additions, transactions, budgets = melt_iati(root)
+        a_df = pd.DataFrame(activities_static, dtype=str)
         a_df = a_df.reindex(sorted(a_df.columns, key=iati_order_xpath), axis=1).sort_values('iati-activity/iati-identifier[1]')
         a_df.to_csv(a_filename, index=False)
+        a_add_df = pd.DataFrame(activites_additions, dtype=str)
+        a_add_df = a_df.reindex(sorted(a_add_df.columns, key=iati_order_xpath), axis=1).sort_values('iati-activity/iati-identifier[1]')
+        a_add_df.to_csv(a_add_filename, index=False)
         t_df = pd.DataFrame(transactions, dtype=str)
         t_df = t_df.reindex(sorted(t_df.columns, key=iati_order_xpath), axis=1).sort_values('iati-activity/iati-identifier[1]')
         t_df.to_csv(t_filename, index=False)
@@ -493,12 +584,16 @@ def xml_to_csv(xml_filename, csv_dir=None):
 
 
 def open_csv_dir(csv_dir):
-    a_filename = os.path.join(csv_dir, "activities.csv")
+    a_filename = os.path.join(csv_dir, "activities_static.csv")
+    a_add_filename = os.path.join(csv_dir, "activities_additions.csv")
     t_filename = os.path.join(csv_dir, "transactions.csv")
     b_filename = os.path.join(csv_dir, "budgets.csv")
 
-    a_df = pd.read_csv(a_filename, dtype=str).fillna("")
+    a_static_df = pd.read_csv(a_filename, dtype=str).fillna("")
+    a_add_df = pd.read_csv(a_add_filename, dtype=str).fillna("")
+    a_df = pd.merge(a_static_df, a_add_df, on='iati-activity/iati-identifier[1]')
     a_df = a_df.reindex(sorted(a_df.columns, key=xpath_sort), axis=1).sort_values('iati-activity/iati-identifier[1]')
+
     t_df = pd.read_csv(t_filename, dtype=str).fillna("")
     t_df = t_df.reindex(sorted(t_df.columns, key=xpath_sort), axis=1).sort_values('iati-activity/iati-identifier[1]')
     b_df = pd.read_csv(b_filename, dtype=str).fillna("")
