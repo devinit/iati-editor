@@ -51,7 +51,7 @@ class Window:
 
     def browseoutput(self):
         Tk().withdraw()
-        self.output = filedialog.asksavefilename(filetypes=[('XML files', '.xml'), ('All files', '.*')])
+        self.output = filedialog.asksaveasfilename(filetypes=[('XML files', '.xml'), ('All files', '.*')])
         self.baro.configure(state='normal')
         self.baro.delete(0, END)
         self.baro.insert(0, self.output)
