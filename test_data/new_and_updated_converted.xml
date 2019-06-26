@@ -26,6 +26,13 @@
     <recipient-country code="GB" percentage="55"/>
     <recipient-country code="KE" percentage="25"/>
     <recipient-country code="NP" percentage="20"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -124,6 +131,13 @@
       <website>www.aidtransparency.net</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-01-01"/>
@@ -504,6 +518,13 @@
     <recipient-country code="GB" percentage="50"/>
     <recipient-country code="KE" percentage="25"/>
     <recipient-country code="UG" percentage="25"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -611,6 +632,13 @@
     <recipient-country code="BR" percentage="10"/>
     <recipient-country code="GB" percentage="40"/>
     <recipient-country code="US" percentage="10"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15110" percentage="100" vocabulary="1"/>
   </iati-activity>
   <iati-activity default-currency="GBP">
@@ -634,6 +662,13 @@
       <email>info@devinit.org</email>
       <website>www.devinit.org</website>
     </contact-info>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15110" percentage="100"/>
     <transaction>
       <transaction-type code="4"/>
@@ -698,6 +733,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -732,6 +774,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -776,6 +825,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-10-01"/>
@@ -834,6 +890,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -934,6 +997,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-10-01"/>
@@ -978,6 +1048,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -1022,6 +1099,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -1066,6 +1150,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -1110,6 +1201,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -1154,6 +1252,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -1198,6 +1303,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-04-01"/>
@@ -1242,6 +1354,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2015-10-01"/>
@@ -1272,6 +1391,13 @@
     </contact-info>
     <recipient-country code="SO" percentage="50"/>
     <recipient-country code="GB" percentage="50"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -1311,6 +1437,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100"/>
     <transaction>
       <transaction-type code="1"/>
@@ -1349,6 +1482,13 @@
       <website>www.aidtransparency.net</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
   </iati-activity>
   <iati-activity default-currency="GBP">
@@ -1373,6 +1513,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15110" percentage="100"/>
     <transaction>
       <transaction-type code="1"/>
@@ -1411,6 +1558,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15110" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -1450,6 +1604,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15110" percentage="100"/>
   </iati-activity>
   <iati-activity default-currency="GBP">
@@ -1474,6 +1635,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -1542,6 +1710,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
   </iati-activity>
   <iati-activity default-currency="GBP">
@@ -1567,6 +1742,13 @@
     </contact-info>
     <recipient-country code="GB" percentage="90"/>
     <recipient-country code="UG" percentage="10"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-04-01"/>
@@ -1721,6 +1903,13 @@
       <website>juds.joinedupdata.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-10-01"/>
@@ -1849,6 +2038,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15111" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-04-01"/>
@@ -1888,6 +2084,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -1917,6 +2120,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <transaction>
       <transaction-type code="1"/>
@@ -2376,6 +2586,13 @@
     </contact-info>
     <recipient-country code="GB" percentage="20"/>
     <recipient-country code="KE" percentage="80"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-10-01"/>
@@ -2452,6 +2669,13 @@
     <recipient-country code="US" percentage="50"/>
     <recipient-country code="GB" percentage="30"/>
     <recipient-country code="KE" percentage="20"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-04-01"/>
@@ -2565,6 +2789,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-01-01"/>
@@ -2610,6 +2841,13 @@
     </contact-info>
     <recipient-country code="KE" percentage="50"/>
     <recipient-country code="UG" percentage="50"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2016-07-01"/>
@@ -2682,6 +2920,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-04-01"/>
@@ -2716,6 +2961,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15163" percentage="100"/>
     <budget type="2">
       <period-start iso-date="2016-10-01"/>
@@ -2757,6 +3009,13 @@
     <recipient-country code="GB" percentage="60"/>
     <recipient-country code="KE" percentage="20"/>
     <recipient-country code="UG" percentage="20"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -2874,6 +3133,13 @@
     </contact-info>
     <recipient-country code="KE" percentage="50"/>
     <recipient-country code="UG" percentage="50"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15110" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-01-01"/>
@@ -2945,6 +3211,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-07-01"/>
@@ -2998,6 +3271,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-07-01"/>
@@ -3047,6 +3327,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-01-01"/>
@@ -3127,6 +3414,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-10-01"/>
@@ -3176,6 +3470,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-01-01"/>
@@ -3259,6 +3560,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-04-01"/>
@@ -3318,6 +3626,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-01-01"/>
@@ -3375,6 +3690,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-10-01"/>
@@ -5345,6 +5667,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2017-01-01"/>
@@ -7885,6 +8214,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100"/>
     <transaction>
       <transaction-type code="4"/>
@@ -8622,6 +8958,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -10317,6 +10660,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="510" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -11508,6 +11858,13 @@
       <website>info@devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -11757,6 +12114,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -12069,6 +12433,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="NP" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="1"/>
@@ -12557,6 +12928,13 @@
       <website>http://data.devinit.org/</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -13198,6 +13576,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector percentage="100" vocabulary="1" code=""/>
     <transaction>
       <transaction-type code="4"/>
@@ -13558,6 +13943,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -13742,6 +14134,13 @@
       <website>http://data.devinit.org/</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -13951,6 +14350,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -14216,6 +14622,13 @@
       <website>https://globalnutritionreport.org/</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -14409,6 +14822,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="NP" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15120" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -14511,6 +14931,13 @@
       <website>http://devinit.org/p20i/</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -15028,6 +15455,13 @@
       <website>http://devinit.org/post/p20-initiative-data-to-leave-no-one-behind/</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -15293,6 +15727,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="122" percentage="100" vocabulary="1"/>
     <budget type="2">
       <period-start iso-date="2019-01-01"/>
@@ -16201,6 +16642,13 @@
     <recipient-country code="KE" percentage="25"/>
     <recipient-country code="NG" percentage="25"/>
     <recipient-country code="UG" percentage="25"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="151" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -16416,6 +16864,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="151" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -16497,6 +16952,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -16679,6 +17141,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -16869,6 +17338,13 @@
       <email>info@devinit.org</email>
       <website>www.devinit.org</website>
     </contact-info>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="151" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="1"/>
@@ -17107,6 +17583,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17275,6 +17758,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17418,6 +17908,13 @@
       <email>info@devinit.org</email>
       <website>www.devinit.org</website>
     </contact-info>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17482,6 +17979,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17554,6 +18058,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17723,6 +18234,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="72050" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17755,6 +18273,13 @@
       <email>info@devinit.org</email>
       <website>www.devinit.org</website>
     </contact-info>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17859,6 +18384,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="15153" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
@@ -17932,6 +18464,13 @@
       <website>www.devinit.org</website>
     </contact-info>
     <recipient-country code="GB" percentage="100"/>
+    <location>
+      <location-reach code="2"/>
+      <point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <pos/>
+      </point>
+      <exactness code="2"/>
+    </location>
     <sector code="151" percentage="100" vocabulary="1"/>
     <transaction>
       <transaction-type code="4"/>
