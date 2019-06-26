@@ -15,21 +15,26 @@ import iati.resources
 
 # Initialize app, checking if frozen in exe
 if getattr(sys, 'frozen', False):
-    IATI_FOLDER = os.path.abspath(os.path.join(sys.executable, '..','iati'))
+    IATI_FOLDER = os.path.abspath(os.path.join(sys.executable, '..', 'iati'))
 else:
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    IATI_FOLDER = os.path.abspath(os.path.join(dir_path,"iati"))
+    IATI_FOLDER = os.path.abspath(os.path.join(dir_path, "iati"))
+
 
 # Override methods to allow freezing in one file
 def get_codelist_paths(version):
     folder_path = os.path.join(IATI_FOLDER, "resources", "standard", iati.resources.folder_name_for_version(version), "codelists")
     files = glob.glob(os.path.join(folder_path, "*.xml"))
     return files
+
+
 iati.resources.get_codelist_paths = get_codelist_paths
 
 
 def resource_filesystem_path(path):
     return os.path.join(IATI_FOLDER, path)
+
+
 iati.resources.resource_filesystem_path = resource_filesystem_path
 
 v203_schema = iati.default.activity_schema("2.03")
