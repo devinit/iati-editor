@@ -1,5 +1,5 @@
-<iati-activities version="2.03" generated-datetime="2019-06-28T14:04:52.545959+01:00">
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+<iati-activities version="2.03" generated-datetime="2019-06-28T14:11:48.783165+01:00">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0002</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -109,7 +109,7 @@
       </indicator>
     </result>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0003</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -491,7 +491,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0007</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -603,7 +603,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0008</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -641,7 +641,7 @@
     </location>
     <sector code="15110" percentage="100" vocabulary="1"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0045</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -711,7 +711,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0049</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -752,7 +752,7 @@
       <value value-date="2016-06-30">53500.00</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0051</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -803,7 +803,7 @@
       <value value-date="2016-06-30">55296.23</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0052</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -868,7 +868,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0053</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -975,7 +975,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0054</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1026,7 +1026,7 @@
       <value value-date="2016-03-31">32022.56</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0055</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1077,7 +1077,7 @@
       <value value-date="2016-12-31">31601.59</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0056</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1128,7 +1128,7 @@
       <value value-date="2016-03-31">7578.38</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0057</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1179,7 +1179,7 @@
       <value value-date="2016-03-31">22863.63</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0059</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1230,7 +1230,7 @@
       <value value-date="2016-06-30">11515.32</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0062</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1281,7 +1281,7 @@
       <value value-date="2016-03-31">18827.00</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0063</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1332,7 +1332,7 @@
       <value value-date="2016-03-31">30800.64</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0066</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1368,7 +1368,7 @@
       <value value-date="2015-12-31">15000.00</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0067</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1415,7 +1415,7 @@
       <value value-date="2016-06-30">4470.75</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0071</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1460,7 +1460,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0073</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1491,7 +1491,7 @@
     </location>
     <sector code="15163" percentage="100"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0074</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1536,7 +1536,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0076</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1582,7 +1582,7 @@
       <value value-date="2016-06-30">5048.60</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0077</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1613,7 +1613,7 @@
     </location>
     <sector code="15110" percentage="100"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0085</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1688,7 +1688,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0087</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1719,7 +1719,7 @@
     </location>
     <sector code="15163" percentage="100"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0088</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -1878,7 +1878,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0089</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2016,7 +2016,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0096</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2062,7 +2062,7 @@
       <value value-date="2016-12-31">22888.56</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0098</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2098,7 +2098,7 @@
       <value value-date="2016-03-31">17102.00</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0111</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2563,7 +2563,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0114</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2645,7 +2645,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0117</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2767,7 +2767,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0121</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2818,7 +2818,7 @@
       <value value-date="2016-12-31">16850.00</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0123</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2898,7 +2898,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0124</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2939,7 +2939,7 @@
       <value value-date="2016-09-30">3362.83</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0128</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -2985,7 +2985,7 @@
       <value value-date="2016-06-30">6192.64</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0138</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3110,7 +3110,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0153</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3189,7 +3189,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0154</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3249,7 +3249,7 @@
       </receiver-org>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0155</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3305,7 +3305,7 @@
       <value value-date="2017-03-31">20699.19</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0156</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3392,7 +3392,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0163</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3448,7 +3448,7 @@
       <value value-date="2017-03-31">54169.24</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0176</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3538,7 +3538,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0177</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3604,7 +3604,7 @@
       <value value-date="2017-03-31">20173.07</value>
     </budget>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0178</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -3668,7 +3668,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0203</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -5645,7 +5645,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0204</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -8192,7 +8192,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0258</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -8936,7 +8936,7 @@
       <language code=""/>
     </document-link>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0262</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -10638,7 +10638,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0291" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0263</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -11836,7 +11836,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0273" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0273</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -12092,7 +12092,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0263" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0274</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -12411,7 +12411,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0277</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -12906,7 +12906,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0284</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -13554,7 +13554,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0290" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0286</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -13921,7 +13921,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0288</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -14112,7 +14112,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0290</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -14328,7 +14328,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0284" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0291</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -14600,7 +14600,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0262" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0293</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -14800,7 +14800,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0301" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0297</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -14909,7 +14909,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0299</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -15433,7 +15433,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0300" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0300</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -15705,7 +15705,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0299" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0301</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -16617,7 +16617,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0314</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -16842,7 +16842,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0341" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0341</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -16930,7 +16930,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0314" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0342</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -17119,7 +17119,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0343</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -17317,7 +17317,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0353" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0344</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -17561,7 +17561,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0348</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -17736,7 +17736,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0349</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -17887,7 +17887,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0350</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -17957,7 +17957,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0351</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -18036,7 +18036,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0352</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -18212,7 +18212,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0357" type="Child"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0353</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -18252,7 +18252,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0343" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0356</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -18362,7 +18362,7 @@
       </description>
     </transaction>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0357</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>
@@ -18442,7 +18442,7 @@
     </transaction>
     <related-activity ref="GB-COH-06368740-P0352" type="Parent"/>
   </iati-activity>
-  <iati-activity default-currency="GBP" humanitarian="false" xml:lang="en">
+  <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0358</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
       <narrative>Development Initiatives Poverty Research</narrative>

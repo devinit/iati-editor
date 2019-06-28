@@ -243,7 +243,6 @@ ADDITIONAL_TAGS = [
     "iati-activity/result"
 ]
 DEFAULT_ADDITIONAL_COLUMNS = [
-    ("iati-activity@{http://www.w3.org/XML/1998/namespace}lang", "en"),
     ("iati-activity@humanitarian", "false"),
     ("iati-activity/iati-identifier[1]", ""),
     ("iati-activity/activity-scope[1]", ""),
@@ -449,6 +448,7 @@ def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.
     for activity in activities_list:
         activity_id = activity["iati-activity/iati-identifier[1]"]
         activity_elem = etree.SubElement(root, 'iati-activity')
+        activity_elem.attrib['{http://www.w3.org/XML/1998/namespace}lang'] = "en"
         activity_elems[activity_id] = activity_elem
         activity_filtered = OrderedDict((k[len('iati-activity')+1:], v) for k, v in activity.items() if v != "" and k[len('iati-activity'):len('iati-activity')+1] != ATTRIB_SEPERATOR)
         for xpath_key in activity_filtered.keys():  # Once through first to create the elements in the correct order
