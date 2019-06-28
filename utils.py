@@ -441,7 +441,7 @@ def melt_iati(root):
 
 def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.03"):
     root = etree.Element('iati-activities', version=iati_version)
-    root.attrib["generated-datetime"] = datetime.datetime.now(pytz.timezone('Europe/London')).isoformat()
+    root.attrib["generated-datetime"] = datetime.datetime.now(pytz.utc).strftime('%Y-%m-%dT%H:%M:%S')
     doc = etree.ElementTree(root)
 
     activity_elems = {}
