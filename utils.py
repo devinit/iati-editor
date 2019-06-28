@@ -2,11 +2,11 @@ import os
 import re
 import sys
 import glob
-import json
-import jsonschema
+import datetime
+import pytz
 from lxml import etree
 import pandas as pd
-from collections import OrderedDict, defaultdict
+from collections import OrderedDict
 import iati
 import iati.validator
 import iati.utilities
@@ -237,6 +237,8 @@ ADDITIONAL_TAGS = [
     "iati-activity/conditions"
 ]
 DEFAULT_ADDITIONAL_COLUMNS = [
+    ("iati-activity@xml:lang", "en")
+    ("iati-activity@humanitarian", "false")
     ("iati-activity/iati-identifier[1]", ""),
     ("iati-activity/activity-scope[1]", ""),
     ("iati-activity/activity-scope[1]@code", ""),
@@ -402,6 +404,7 @@ def melt_iati(root):
 
 def cast_iati(activities_list, transactions_list, budgets_list, iati_version="2.03"):
     root = etree.Element('iati-activities', version=iati_version)
+    root.attrib["generated-datetime"] = datetime.datetime.now(pytz.timezone('Europe/London')).isoformat()
     doc = etree.ElementTree(root)
 
     activity_elems = {}
