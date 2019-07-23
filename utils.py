@@ -341,12 +341,17 @@ def iati_order(xml_element):
 def iati_order_xpath(xpath_key):
     xpath_without_attribute = xpath_key.split(ATTRIB_SEPERATOR)[0]
     xpath_split = [elem_xpath.split("[")[0] for elem_xpath in xpath_without_attribute.split(XPATH_SEPERATOR)]
+    top_index = 0
+    sort_orders = [0]
     if len(xpath_split) > 1:
-        elem_tag = xpath_split[-1]
-        parent_tag = xpath_split[-2]
-        family_tag = "{}{}{}".format(parent_tag, XPATH_SEPERATOR, elem_tag)
-        return SORT_ORDER[family_tag], xpath_key
-    return 0, xpath_key
+        top_index = int(xpath_without_attribute.split(XPATH_SEPERATOR)[1].split("[")[-1][:-1])
+        sort_orders.append(top_index)
+        for i in range(1, len(xpath_split)):
+            elem_tag = xpath_split[i]
+            parent_tag = xpath_split[i-1]
+            family_tag = "{}{}{}".format(parent_tag, XPATH_SEPERATOR, elem_tag)
+            sort_orders.append(SORT_ORDER[family_tag])
+    return sort_orders, xpath_key
 
 
 def create_ancestor_tag(absolute_xpath):
