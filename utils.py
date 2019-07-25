@@ -290,6 +290,7 @@ DEFAULT_ADDITIONAL_COLUMNS = [
     ("iati-activity/conditions[1]", ""),
     ("iati-activity/conditions[1]@attached", ""),
     ("iati-activity/conditions[1]/condition[1]", ""),
+    ("iati-activity/conditions[1]/condition[1]@type", ""),
     ("iati-activity/conditions[1]/condition[1]/narrative[1]", ""),
     ("iati-activity/result[1]/reference[1]", ""),
     ("iati-activity/result[1]@type", ""),
