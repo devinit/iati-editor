@@ -229,6 +229,7 @@ REQUIRED_ATTRIBUTES = [
 ]
 ADDITIONAL_TAGS = [
     "iati-activity/iati-identifier",
+    "iati-activity/activity-date",
     "iati-activity/activity-scope",
     "iati-activity/recipient-region",
     "iati-activity/location",
@@ -246,6 +247,18 @@ ADDITIONAL_TAGS = [
 DEFAULT_ADDITIONAL_COLUMNS = [
     ("iati-activity@humanitarian", "false"),
     ("iati-activity/iati-identifier[1]", ""),
+    ("iati-activity/activity-date[1]", ""),
+    ("iati-activity/activity-date[1]@iso-date", ""),
+    ("iati-activity/activity-date[1]@type", ""),
+    ("iati-activity/activity-date[2]", ""),
+    ("iati-activity/activity-date[2]@iso-date", ""),
+    ("iati-activity/activity-date[2]@type", ""),
+    ("iati-activity/activity-date[3]", ""),
+    ("iati-activity/activity-date[3]@iso-date", ""),
+    ("iati-activity/activity-date[3]@type", ""),
+    ("iati-activity/activity-date[4]", ""),
+    ("iati-activity/activity-date[4]@iso-date", ""),
+    ("iati-activity/activity-date[4]@type", ""),
     ("iati-activity/activity-scope[1]", ""),
     ("iati-activity/activity-scope[1]@code", ""),
     ("iati-activity/recipient-region[1]", ""),
@@ -327,6 +340,16 @@ DEFAULT_ADDITIONAL_COLUMNS = [
     ("iati-activity/result[1]/indicator[1]/period[1]/actual[1]@value", ""),
 ]
 
+DEFAULT_ATTRIBS = [
+    ("iati-activity/reporting-org", "ref", "GB-COH-06368740"),
+    ("iati-activity/reporting-org", "type", "21"),
+    ("iati-activity/sector", "vocabulary", "1")
+]
+
+DEFAULT_ELEM_VALS = [
+    ("iati-activity/reporting-org/narrative", "Development Initiatives Poverty Research"),
+]
+
 
 def xpath_sort(xpath_key):
     pattern = re.compile(r"\[(\d+)\]")
@@ -337,7 +360,10 @@ def xpath_sort(xpath_key):
 
 def iati_order(xml_element):
     family_tag = "{}{}{}".format(xml_element.getparent().tag, XPATH_SEPERATOR, xml_element.tag)
-    return SORT_ORDER[family_tag]
+    activity_date_type = 0
+    if family_tag == "iati-activity/activity-date" and "type" in xml_element.attrib:
+        activity_date_type = xml_element.attrib["type"]
+    return SORT_ORDER[family_tag], activity_date_type
 
 
 def iati_order_xpath(xpath_key):
@@ -347,12 +373,12 @@ def iati_order_xpath(xpath_key):
     sort_orders = [0]
     if len(xpath_split) > 1:
         top_index = int(xpath_without_attribute.split(XPATH_SEPERATOR)[1].split("[")[-1][:-1])
-        sort_orders.append(top_index)
         for i in range(1, len(xpath_split)):
             elem_tag = xpath_split[i]
             parent_tag = xpath_split[i-1]
             family_tag = "{}{}{}".format(parent_tag, XPATH_SEPERATOR, elem_tag)
             sort_orders.append(SORT_ORDER[family_tag])
+        sort_orders.append(top_index)
     return sort_orders, xpath_key
 
 
@@ -614,6 +640,10 @@ def xml_to_csv(xml_filename, csv_dir=None):
     with open(xml_filename, "r") as xmlfile:
         parser = etree.XMLParser(remove_blank_text=True)
         tree = etree.parse(xmlfile, parser=parser)
+
+        # Sort IATI order, also activity-date@type
+        for parent in tree.xpath('//*[./*]'):  # Search for parent elements, reorder
+            parent[:] = sorted(parent, key=lambda x: iati_order(x))
 
         # Add missing mandatory elements
         for required_child in REQUIRED_CHILDREN:
