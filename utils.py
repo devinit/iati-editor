@@ -343,11 +343,12 @@ DEFAULT_ADDITIONAL_COLUMNS = [
 DEFAULT_ATTRIBS = [
     ("iati-activity/reporting-org", "ref", "GB-COH-06368740"),
     ("iati-activity/reporting-org", "type", "21"),
-    ("iati-activity/sector", "vocabulary", "1")
+    ("iati-activity/sector", "vocabulary", "1"),
 ]
 
 DEFAULT_ELEM_VALS = [
     ("iati-activity/reporting-org/narrative", "Development Initiatives Poverty Research"),
+    ("iati-activity/contact-info/email", "info@devinit.org"),
 ]
 
 
@@ -661,6 +662,24 @@ def xml_to_csv(xml_filename, csv_dir=None):
             for matching_parent in matching_parents:
                 if attrib_key not in matching_parent.attrib:
                     matching_parent.attrib[attrib_key] = ""
+
+        # Add default element values
+        for default_elem_val in DEFAULT_ELEM_VALS:
+            elem_xpath, default_value = default_elem_val
+            matching_elems = tree.xpath(elem_xpath)
+            for matching_elem in matching_elems:
+                if not matching_elem.text:
+                    matching_elem.text = default_value
+
+        # Add default element attributes
+        for default_attrib in DEFAULT_ATTRIBS:
+            elem_xpath, attrib_key, default_value = default_attrib
+            matching_elems = tree.xpath(elem_xpath)
+            for matching_elem in matching_elems:
+                if attrib_key not in matching_elem.attrib:
+                    matching_elem.attrib[attrib_key] = default_value
+                elif matching_elem.attrib[attrib_key] == "":
+                    matching_elem.attrib[attrib_key] = default_value
 
         root = tree.getroot()
 
