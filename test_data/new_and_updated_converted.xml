@@ -1,4 +1,4 @@
-<iati-activities version="2.03" generated-datetime="2019-08-08T15:57:22">
+<iati-activities version="2.03" generated-datetime="2019-08-08T17:07:30">
   <iati-activity xml:lang="en" default-currency="GBP" humanitarian="false">
     <iati-identifier>GB-COH-06368740-P0002</iati-identifier>
     <reporting-org ref="GB-COH-06368740" type="21">
@@ -34,22 +34,22 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">55250.57</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">55250.57</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">55250.57</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">55250.57</value>
@@ -139,27 +139,27 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">124704.31</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2018-01-01"/>
       <period-end iso-date="2018-03-31"/>
       <value value-date="2018-03-31">362401.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">133354.31</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">148374.31</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">110354.31</value>
@@ -526,22 +526,22 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">35209.77</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">31800.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">25900.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">25900.00</value>
@@ -741,12 +741,12 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">1500.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">53500.00</value>
@@ -782,22 +782,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">48846.23</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">64834.83</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">40793.64</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">55296.23</value>
@@ -833,22 +833,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">17392.36</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">18631.86</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">26068.86</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">19791.36</value>
@@ -898,22 +898,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">65925.22</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">68602.22</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">72887.06</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">67904.10</value>
@@ -1005,22 +1005,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">31320.55</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">33861.40</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">30933.89</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">32022.56</value>
@@ -1056,22 +1056,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">29021.07</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">29224.09</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">36118.09</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">31601.59</value>
@@ -1107,22 +1107,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">16158.64</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">11315.24</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">19972.27</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">7578.38</value>
@@ -1158,22 +1158,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">14746.24</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">14100.35</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">21038.63</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">22863.63</value>
@@ -1209,22 +1209,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">13378.53</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">7493.54</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">10207.33</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">11515.32</value>
@@ -1260,22 +1260,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">19327.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">18827.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">18827.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">18827.00</value>
@@ -1311,22 +1311,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">39252.94</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">31576.86</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">34852.99</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">30800.64</value>
@@ -1362,7 +1362,7 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2015-10-01"/>
       <period-end iso-date="2015-12-31"/>
       <value value-date="2015-12-31">15000.00</value>
@@ -1399,17 +1399,17 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">410.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">3132.25</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">4470.75</value>
@@ -1566,17 +1566,17 @@
       <exactness code="2"/>
     </location>
     <sector code="15110" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">19995.79</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">18945.79</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">5048.60</value>
@@ -1643,22 +1643,22 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">6250.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">6250.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">6250.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">6250.00</value>
@@ -1750,17 +1750,17 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">2049.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">105.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">3042.81</value>
@@ -1911,22 +1911,22 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">27066.87</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">31030.67</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">31729.28</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">48005.40</value>
@@ -2046,17 +2046,17 @@
       <exactness code="2"/>
     </location>
     <sector code="15111" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">6596.19</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">28958.56</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">22888.56</value>
@@ -2092,7 +2092,7 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">17102.00</value>
@@ -2594,22 +2594,22 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">7000.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">5766.67</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">4675.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">7533.33</value>
@@ -2677,17 +2677,17 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">12970.63</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">4089.09</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">112994.44</value>
@@ -2797,22 +2797,22 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">16850.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">16850.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">16850.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">16850.00</value>
@@ -2849,22 +2849,22 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">17856.14</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-01-01"/>
       <period-end iso-date="2016-03-31"/>
       <value value-date="2016-03-31">6578.50</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">17856.14</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">10337.71</value>
@@ -2928,12 +2928,12 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">8660.17</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">3362.83</value>
@@ -2969,17 +2969,17 @@
       <exactness code="2"/>
     </location>
     <sector code="15163" percentage="100"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-10-01"/>
       <period-end iso-date="2016-12-31"/>
       <value value-date="2016-12-31">28027.93</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-07-01"/>
       <period-end iso-date="2016-09-30"/>
       <value value-date="2016-09-30">23627.93</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2016-04-01"/>
       <period-end iso-date="2016-06-30"/>
       <value value-date="2016-06-30">6192.64</value>
@@ -3141,17 +3141,17 @@
       <exactness code="2"/>
     </location>
     <sector code="15110" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">12902.44</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">11415.16</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">9225.61</value>
@@ -3219,17 +3219,17 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">1883.05</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">7534.76</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">2764.84</value>
@@ -3279,27 +3279,27 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">15090.22</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">8430.55</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">18210.64</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2018-01-01"/>
       <period-end iso-date="2018-03-31"/>
       <value value-date="2018-03-31">78523.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">20699.19</value>
@@ -3335,42 +3335,42 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">122.57</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">122.57</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">122.57</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">82774.99</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">142557.73</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">78422.01</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2018-01-01"/>
       <period-end iso-date="2018-03-31"/>
       <value value-date="2018-03-31">438319.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">110877.10</value>
@@ -3422,27 +3422,27 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">28393.12</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">73956.55</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">43144.78</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2018-01-01"/>
       <period-end iso-date="2018-03-31"/>
       <value value-date="2018-03-31">261206.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">54169.24</value>
@@ -3478,37 +3478,37 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">1770.64</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">2178.17</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">2678.40</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">5214.96</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">15377.06</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">26531.73</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">800.00</value>
@@ -3568,37 +3568,37 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">4020.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">2520.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">12910.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">26140.20</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">17432.36</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">15415.33</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">20173.07</value>
@@ -3634,27 +3634,27 @@
       <exactness code="2"/>
     </location>
     <sector code="43082" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">10718.44</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2018-01-01"/>
       <period-end iso-date="2018-03-31"/>
       <value value-date="2018-03-31">17353.00</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">22037.03</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">22873.01</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">36266.87</value>
@@ -3698,22 +3698,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">69282.50</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">76202.50</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">71582.50</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">70082.50</value>
@@ -5675,22 +5675,22 @@
       <exactness code="2"/>
     </location>
     <sector code="91010" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-01-01"/>
       <period-end iso-date="2017-03-31"/>
       <value value-date="2017-03-31">189626.49</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-04-01"/>
       <period-end iso-date="2017-06-30"/>
       <value value-date="2017-06-30">188437.66</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-07-01"/>
       <period-end iso-date="2017-09-30"/>
       <value value-date="2017-09-30">184458.66</value>
     </budget>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2017-10-01"/>
       <period-end iso-date="2017-12-31"/>
       <value value-date="2017-12-31">185965.66</value>
@@ -15735,7 +15735,7 @@
       <exactness code="2"/>
     </location>
     <sector code="122" percentage="100" vocabulary="1"/>
-    <budget type="2">
+    <budget type="2" status="">
       <period-start iso-date="2019-01-01"/>
       <period-end iso-date="2019-03-31"/>
       <value value-date="2019-03-31">0.30</value>

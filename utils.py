@@ -224,7 +224,8 @@ REQUIRED_ATTRIBUTES = [
     ("//document-link", "format"),
     ("//category", "code"),
     ("//language", "code"),
-    ("//sector", "code")
+    ("//sector", "code"),
+    ("//budget", "status")
 ]
 ADDITIONAL_TAGS = [
     "iati-activity/iati-identifier",
@@ -613,6 +614,24 @@ def xml_to_csv(xml_filename, csv_dir=None):
     with open(xml_filename, "r") as xmlfile:
         parser = etree.XMLParser(remove_blank_text=True)
         tree = etree.parse(xmlfile, parser=parser)
+
+        # Add missing mandatory elements
+        for required_child in REQUIRED_CHILDREN:
+            parent_xpath, child_tag = required_child
+            matching_parents = tree.xpath(parent_xpath)
+            for matching_parent in matching_parents:
+                child_query = matching_parent.xpath(child_tag)
+                if not child_query:
+                    etree.SubElement(matching_parent, child_tag)
+
+        # Add missing mandatory attributes
+        for required_attrib in REQUIRED_ATTRIBUTES:
+            parent_xpath, attrib_key = required_attrib
+            matching_parents = tree.xpath(parent_xpath)
+            for matching_parent in matching_parents:
+                if attrib_key not in matching_parent.attrib:
+                    matching_parent.attrib[attrib_key] = ""
+
         root = tree.getroot()
 
         activities_static, activities_additions, transactions, budgets = melt_iati(root)
