@@ -344,6 +344,7 @@ DEFAULT_ATTRIBS = [
     ("iati-activity/reporting-org", "ref", "GB-COH-06368740"),
     ("iati-activity/reporting-org", "type", "21"),
     ("iati-activity/sector", "vocabulary", "1"),
+    ("iati-activity/sector", "percentage", "100"),
 ]
 
 DEFAULT_ELEM_VALS = [
