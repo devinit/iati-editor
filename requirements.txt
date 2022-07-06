@@ -1,6 +1,6 @@
 chardet==3.0.4
 jsonschema==2.6.0
-lxml==4.2.4
+lxml==4.9.1
 numpy==1.16.4
 pandas==0.24.2
 pyIATI==0.4.1
